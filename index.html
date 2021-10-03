@@ -4,9 +4,291 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <!-- SEMANTIC UI -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" defer></script>
+
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer>
+    </script>
+
+  <!-- MAIN JS -->
+    <script src="./scripts/app.js" defer></script>
+
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <title>Lonna Lu | Web Developer</title>
 </head>
+
 <body>
+
+  <!-- NAV -->
+  <div id="nav">
+    <a class="nav-item" href="#home"> Home. </a>
+    <a class="nav-item" href="#projects"> Projects. </a>
+    <a class="nav-item" href="#skills"> Skills. </a>
+    <a class="nav-item" href="#contact"> Contact. </a>
+  </div>
+
+  <!-- HOME -->
   
+  <div id="home">
+    <div class="section-body">
+      <div class="ui stackable two column middle aligned grid">
+        <div class="row">
+          <div class="column">
+            <img src="./images/portrait.png" alt="Profile picture" class="ui centered image portrait-img" />
+          </div>
+  
+          <div class="column">
+            <h1>Hi, I'm Lonna.</h1>
+            <p>
+              I am a full stack web developer who loves to make ideas come to
+              life.
+            </p>
+            <p>
+              I was formerly a project coordinator for a web development &
+              marketing company. I grew an interest for what really happens
+              behind the scenes, and eventually the interest became a passion
+              for building websites and features for people.
+            </p>
+            <p>
+              Born with a knack for problem solving and asking "Why?" "How?"
+              or "What can I do?", I strive to grow as a person and as a
+              professional by embracing my curiosity and adaptability to
+              challenges. My reliability and ambition manifests throughout all
+              roles and responsibilities. I am excited to translate my problem
+              solving and teamwork skills into building complex and valuable
+              software sytems.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="ui centered grid">
+        <a href="#projects"><i class="big chevron down icon" id="animated-arrow"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+
+  <div id="projects">
+    <div class="section-body">
+      <h2>Projects.</h2>
+
+      <div class="ui cards">
+
+        <!-- CRAVINGS CARD  -->
+        <div class="ui centered card">
+          <div class="image">
+            <img src="./images/cravings-1.png" alt="Cravings Cover Photo" />
+          </div>
+          <div class="content">
+            <div class="header">Cravings</div>
+            <div class="meta">NodeJS | Express | MongoDB</div>
+            <div class="description">
+              Search popular restaurants in the heart of Los Angeles, CA.
+              Users can view reviews and user profiles. Upon creating an
+              account, you can customize your profile, add reviews, and check
+              out reviews from other users.
+              <hr />
+              To view a test account, use the following credentials:
+              <br />
+              Demo | DemoAccount
+              <hr />
+            </div>
+            <div class="extra content">
+              <span class="right floated card-link">
+                <a href="https://github.com/Luna5678/Cravings/tree/main/" target="_blank">
+                  View Code
+                </a>
+              </span>
+              <span class="card-link">
+                <a href="https://cravings-ll.herokuapp.com/" target="_blank">
+                  View Live Site
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- WAYFARER CARD -->
+        <div class="ui centered card">
+          <div class="image">
+            <img src="./images/wayfarer-1.png" alt="Wayfarer Cover Photo" />
+          </div>
+          <div class="content">
+            <div class="header">Wayfarer</div>
+            <div class="meta">Django | Python | PostgreSQL</div>
+            <div class="description">
+              Share and find tips about travel destinations around the world.
+              Wayfarer builds a community for people seeking to travel or
+              learn about the art and architectures around the world. You can
+              build a profile and create posts.
+              <hr />
+              To view a test account, use the following credentials:
+              <br />
+              Demo | DemoAccount
+              <hr />
+            </div>
+            <div class="extra content">
+              <span class="right floated card-link">
+                <a href="https://github.com/Luna5678/ProjectWayfarer/tree/main" target="_blank">
+                  View Code
+                </a>
+              </span>
+              <span class="card-link">
+                <a href="https://wayfarer-art-app.herokuapp.com/" target="_blank">
+                  View Live Site
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- QUELUE CARD -->
+        <div class="ui centered card">
+          <div class="image">
+            <img src="./images/quelue-1.png" alt="quelue Cover Photo" />
+          </div>
+          <div class="content">
+            <div class="header">quelue</div>
+            <div class="meta">NodeJS | Express | MongoDB</div>
+            <div class="description">
+              Recreate certain functionalities of streaming services, such as
+              Hulu, and improve on the user experience. Aimed to improve on
+              the process navigating episodes of a series and viewing your
+              queue.
+              <hr />
+              To view a test account, use the following credentials:
+              <br />
+              Demo | DemoAccount
+              <hr />
+            </div>
+            <div class="extra content">
+              <span class="right floated card-link">
+                <a href="https://github.com/Luna5678/quelue/tree/main" target="_blank">
+                  View Code
+                </a>
+              </span>
+              <span class="card-link">
+                <a href="http://quelue.herokuapp.com/login" target="_blank">
+                  View Live Site
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div id="skills">
+    <div class="section-body">
+      <h2>Skills.</h2>
+      <div class="ui tiny centered images">
+        <img src="./images/skills-css-logo.png" alt="CSS 3 Logo" class="ui image skills-logo" />
+        <img src="./images/skills-html-logo.png" alt="HTML 5 Logo" class="ui image skills-logo" />
+        <img src="./images/skills-js-logo.png" alt="JavaScript Logo" class="ui image skills-logo" />
+        <img src="./images/skills-mongodb-logo.png" alt="MongoDB Logo" class="ui image small skills-logo" />
+        <img src="./images/skills-node-js-logo.png" alt="Node.js Logo" class="ui image skills-logo" />
+        <img src="./images/skills-python-logo.png" alt="Python Logo" class="ui image skills-logo" />
+        <img src="./images/skills-typescript-logo.png" alt="TypeScript Logo" class="ui image skills-logo" />
+        <img src="./images/skills-postgresql-logo.png" alt="PostgreSQL Logo" class="ui image skills-logo" />
+        <img src="./images/skills-express-logo.png" alt="Express Logo" class="ui image skills-logo" />
+        <img src="./images/skills-django-logo.png" alt="Django Logo" class="ui image skills-logo" />
+        <img src="./images/skills-bootstrap-logo.png" alt="Bootstrap Logo" class="ui image skills-logo" />
+        <img src="./images/skills-semanticui-logo.png" alt="Semantic UI Logo" class="ui image skills-logo" />
+        <img src="./images/skills-sass-logo.png" alt="Sass Logo" class="ui image skills-logo" />
+        <img src="./images/skills-bulma-logo.png" alt="Bulma Logo" class="ui image skills-logo" />
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div id="contact">
+    <div class="section-body">
+      <h2>Contact</h2>
+  
+      <div class="ui stackable two column grid">
+        <div class="row">
+          <!-- CONTACT LEFT SIDE -->
+          <div class="six wide column">
+            <div class="contact-left">
+              <p><span class="body-text-larger">Let's connect!</span></p>
+              <p>
+                <span class="my-name">
+                  Lonna Lu
+                  <br />
+                  Los Angeles, CA
+                </span>
+              </p>
+              <p class="contact-link">
+                <a href="./files/LonnaL-Resume.pdf" download>
+                  <i class="download icon large"></i>
+                  <span class="contact-link-underline"> RESUME </span>
+                </a>
+              </p>
+              <p class="contact-link">
+                <a href="https://www.linkedin.com/in/lonna-lu/" target="_blank">
+                  <i class="linkedin icon large"></i>
+                  <span class="contact-link-underline"> LINKEDIN </span>
+                </a>
+              </p>
+              <p class="contact-link">
+                <a href="https://github.com/Luna5678" target="_blank">
+                  <i class="github icon large"></i>
+                  <span class="contact-link-underline"> GITHUB </span>
+                </a>
+              </p>
+              <p class="contact-link">
+                <a href="mailto:lonna.dev@gmail.com" target="_blank">
+                  <i class="envelope icon large"></i>
+                  <span class="contact-link-underline"> EMAIL </span>
+                </a>
+              </p>
+            </div>
+          </div>
+  
+          <!-- CONTACT RIGHT SIDE -->
+
+          <div class="ten wide column">
+            <form action="https://formspree.io/f/xgerqyky" method="POST">
+              <div class="ui form stackable grid">
+                <div class="two column row">
+                  <div class="three wide column input-label">NAME</div>
+                  <div class="eleven wide column">
+                    <input type="text" name="name" placeholder="Your Name" />
+                  </div>
+                </div>
+                <div class="two column row">
+                  <div class="three wide column input-label">EMAIL</div>
+                  <div class="eleven wide column">
+                    <input type="email" name="email" placeholder="Your Email" />
+                  </div>
+                </div>
+                <div class="two column row">
+                  <div class="three wide column input-label">MESSAGE</div>
+                  <div class="eleven wide column">
+                    <textarea rows="5" name="message" placeholder="Your Message"></textarea>
+                  </div>
+                </div>
+                <div class="centered row">
+                  <button class="ui button input-label" type="submit">
+                    SEND
+                  </button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
 </body>
 </html>

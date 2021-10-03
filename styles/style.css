@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Raleway:wght@600;700&display=swap");
+
+/* GLOBAL */
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --headings-font: "Raleway", sans-serif;
+  --body-font: "Montserrat", sans-serif;
+  --aqua-color: #e0fbfc;
+  --black-color: #05060a;
+  --navy-color: #17223a;
+  --purple-color: #ccc9e7;
+  --white-color: #f2f4f8;
+}
+
+h1,
+h2 {
+  font-family: var(--headings-font);
+}
+
+p {
+  font-family: var(--body-font);
+}
+
+body {
+  background-color: var(--black-color);
+  font-family: var(--body-font);
+}
+
+.section-body {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 0;
+}
+
+.header {
+  font-family: var(--headings-font) !important;
+}
+
+/* NAV */
+
+#nav {
+  background-image: linear-gradient(rgba(5, 6, 10, 1), rgba(5, 6, 10, 0.5));
+  font-family: var(--headings-font);
+  height: 60px;
+  margin: auto;
+  position: -webkit-sticky;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  color: var(--purple-color) !important;
+  padding: 0 15px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.nav-item:hover {
+  text-decoration: wavy underline;
+}
+
+/* HOME */
+
+#home {
+  color: var(--white-color);
+  background-color: var(--black-color);
+}
+
+.portrait-img {
+  animation: animate 0.8s forwards;
+  border-radius: 1px;
+}
+
+@keyframes animate {
+  from {
+    box-shadow: none;
+  }
+  to {
+    box-shadow: 20px 20px var(--aqua-color);
+  }
+}
+
+#home h1 {
+  display: inline-block;
+  padding-right: 36px;
+  padding-top: 15px;
+  margin-bottom: 20px;
+  background-color: var(--aqua-color);
+  color: var(--black-color);
+  border-radius: 1px;
+}
+
+#animated-arrow {
+  color: var(--purple-color);
+  margin-top: 40px;
+  transition: transform 0.3s;
+}
+
+#animated-arrow:hover {
+  transform: scale(1.2);
+}
+
+/* PROJECTS */
+#projects {
+  color: var(--white-color);
+  background-color: var(--navy-color);
+  width: 100%;
+}
+
+#projects h2 {
+  display: inline-block;
+  padding-right: 36px;
+  padding-top: 15px;
+  margin-bottom: 20px;
+  background-color: var(--aqua-color);
+  color: var(--navy-color);
+  border-radius: 1px;
+}
+
+.card {
+  border: 3px solid var(--purple-color) !important;
+  border-radius: 1px !important;
+  transition: transform 0.3s !important;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-link {
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+.card-link a {
+  color: var(--purple-color);
+}
+
+.card-link:hover {
+  text-decoration: wavy underline;
+}
+
+/* SKILLS */
+
+#skills {
+  background-color: var(--white-color);
+  width: 100%;
+}
+
+#skills h2 {
+  display: inline-block;
+  padding-right: 36px;
+  padding-top: 15px;
+  margin-bottom: 20px;
+  background-color: var(--navy-color);
+  color: var(--aqua-color);
+  border-radius: 1px;
+}
+
+.skills-logo {
+  margin: 15px !important;
+}
+
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s; /* So they look staggered */
+}
+
+@keyframes come-in {
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* CONTACT */
+
+#contact {
+  color: var(--white-color);
+  background-color: var(--black-color);
+}
+
+#contact h2 {
+  display: inline-block;
+  padding-right: 36px;
+  padding-top: 15px;
+  margin-bottom: 20px;
+  background-color: var(--aqua-color);
+  color: var(--navy-color);
+  border-radius: 1px;
+}
+
+.my-name {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.contact-link a {
+  color: var(--purple-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.contact-link-underline {
+  text-decoration: underline;
+}
+
+.contact-link-underline:hover {
+  text-decoration: wavy underline;
+}
+
+.contact-left {
+  padding-left: 40px;
+}
+
+.body-text-larger {
+  font-size: 1.2rem;
+}
+
+input {
+  border: solid 3px var(--purple-color) !important;
+  font-family: var(--body-font) !important;
+  border-radius: 1px !important;
+}
+
+textarea {
+  border: solid 3px var(--purple-color) !important;
+  font-family: var(--body-font);
+  border-radius: 1px !important;
+}
+
+button {
+  background-color: var(--purple-color) !important;
+  color: white !important;
+  border: solid 3px white !important;
+  padding: 12px 30px !important;
+  transition: transform 0.3s !important;
+  border-radius: 1px !important;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.input-label {
+  font-family: var(--headings-font);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 752px) {
+  .contact-left {
+    padding-left: 0;
+    text-align: center;
+  }
+}
