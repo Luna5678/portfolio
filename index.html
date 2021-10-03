@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- SEMANTIC UI -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" defer></script>
-
+  
   <!-- JQUERY -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer>
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer>
     </script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" defer></script>
   <!-- MAIN JS -->
     <script src="./scripts/app.js" defer></script>
 
@@ -179,21 +179,21 @@
     <div class="section-body">
       <h2>Skills.</h2>
       <div class="ui centered images">
-        <img src="./images/skills-css-logo.png" alt="CSS 3 Logo" class="ui image skills-logo" />
-        <img src="./images/skills-html-logo.png" alt="HTML 5 Logo" class="ui image skills-logo" />
-        <img src="./images/skills-js-logo.png" alt="JavaScript Logo" class="ui image skills-logo" />
-        <img src="./images/skills-mongodb-logo.png" alt="MongoDB Logo" class="ui image small skills-logo" />
-        <img src="./images/skills-mongoose-logo.png" alt="Mongoose Logo" class="ui image small skills-logo" />
-        <img src="./images/skills-node-js-logo.png" alt="Node.js Logo" class="ui image skills-logo" />
-        <img src="./images/skills-express-logo.png" alt="Express Logo" class="ui image skills-logo" />
-        <img src="./images/skills-sass-logo.png" alt="Sass Logo" class="ui image skills-logo" />
-        <img src="./images/skills-bootstrap-logo.png" alt="Bootstrap Logo" class="ui image skills-logo" />
-        <img src="./images/skills-bulma-logo.png" alt="Bulma Logo" class="ui image skills-logo" />
-        <img src="./images/skills-python-logo.png" alt="Python Logo" class="ui image skills-logo" />
-        <img src="./images/skills-typescript-logo.png" alt="TypeScript Logo" class="ui image skills-logo" />
-        <img src="./images/skills-postgres-logo.png" alt="PostgreSQL Logo" class="ui image skills-logo" />
-        <img src="./images/skills-django-logo.png" alt="Django Logo" class="ui image skills-logo" />
-        <img src="./images/skills-semanticui-logo.png" alt="Semantic UI Logo" class="ui image skills-logo" />
+        <img src="./images/skills-css-logo.png" alt="CSS 3 Logo" data-content="CSS 3" class="ui image skills-logo" />
+        <img src="./images/skills-html-logo.png" alt="HTML 5 Logo" data-content="HTML 5" class="ui image skills-logo" />
+        <img src="./images/skills-js-logo.png" alt="JavaScript Logo" data-content="JavaScript" class="ui image skills-logo" />
+        <img src="./images/skills-mongodb-logo.png" alt="MongoDB Logo" data-content="MongoDB" class="ui image small skills-logo" />
+        <img src="./images/skills-mongoose-logo.png" alt="Mongoose Logo" data-content="Mongoose" class="ui image small skills-logo" />
+        <img src="./images/skills-node-js-logo.png" alt="Node.js Logo" data-content="Node.js" class="ui image skills-logo" />
+        <img src="./images/skills-express-logo.png" alt="Express Logo" data-content="Express.js" class="ui image skills-logo" />
+        <img src="./images/skills-sass-logo.png" alt="Sass Logo" data-content="Sass" class="ui image skills-logo" />
+        <img src="./images/skills-bootstrap-logo.png" alt="Bootstrap Logo" data-content="Bootstrap" class="ui image skills-logo" />
+        <img src="./images/skills-bulma-logo.png" alt="Bulma Logo" data-content="Bulma" class="ui image skills-logo" />
+        <img src="./images/skills-python-logo.png" alt="Python Logo" data-content="Python" class="ui image skills-logo" />
+        <img src="./images/skills-typescript-logo.png" alt="TypeScript Logo" data-content="TypeScript" class="ui image skills-logo" />
+        <img src="./images/skills-postgres-logo.png" alt="PostgreSQL Logo" data-content="PostgreSQL" class="ui image skills-logo" />
+        <img src="./images/skills-django-logo.png" alt="Django Logo" data-content="Django" class="ui image skills-logo" />
+        <img src="./images/skills-semanticui-logo.png" alt="Semantic UI Logo" data-content="Semantic UI" class="ui image skills-logo" />
       </div>
     </div>
   </div>
@@ -208,14 +208,20 @@
           <!-- CONTACT LEFT SIDE -->
           <div class="six wide column">
             <div class="contact-left">
-              <p><span class="body-text-larger">Let's connect!</span></p>
-              <p>
-                <span class="my-name">
-                  Lonna Lu
-                  <br />
-                  Los Angeles, CA
-                </span>
-              </p>
+              <div class="contact-container">
+                <p><span class="body-text-larger">Let's connect!</span></p>
+              </div>
+              
+              <div class="contact-container">
+                <p>
+                  <span class="my-name">
+                    Lonna Lu
+                    <br />
+                    Los Angeles, CA
+                  </span>
+                </p>
+              </div>
+              
               <p class="contact-link">
                 <a href="./files/LonnaLu-Resume.pdf" download>
                   <i class="download icon large"></i>
@@ -249,21 +255,33 @@
             <form action="https://formspree.io/f/xgerqyky" method="POST">
               <div class="ui form stackable grid">
                 <div class="two column row">
-                  <div class="three wide column input-label">NAME</div>
+                  <div class="three wide column input-label">
+                    <label for="name">
+                      NAME
+                    </label>
+                  </div>
                   <div class="eleven wide column">
-                    <input type="text" name="name" placeholder="Your Name" />
+                    <input type="text" name="name" placeholder="Your Name" id="name" />
                   </div>
                 </div>
                 <div class="two column row">
-                  <div class="three wide column input-label">EMAIL</div>
+                  <div class="three wide column input-label">
+                    <label for="email">
+                      EMAIL
+                    </label>
+                  </div>
                   <div class="eleven wide column">
-                    <input type="email" name="email" placeholder="Your Email" />
+                    <input type="email" name="email" placeholder="Your Email" id="email" />
                   </div>
                 </div>
                 <div class="two column row">
-                  <div class="three wide column input-label">MESSAGE</div>
+                  <div class="three wide column input-label">
+                    <label for="message">
+                      MESSAGE
+                    </label>
+                  </div>
                   <div class="eleven wide column">
-                    <textarea rows="5" name="message" placeholder="Your Message"></textarea>
+                    <textarea rows="5" name="message" placeholder="Your Message" id="message"></textarea>
                   </div>
                 </div>
                 <div class="centered row">

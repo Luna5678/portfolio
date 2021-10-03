@@ -49,3 +49,7 @@ win.scroll(function(event) {
   });
   
 });
+
+$('.skills-logo')
+  .popup()
+;

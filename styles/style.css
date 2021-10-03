@@ -9,8 +9,8 @@ html {
   --headings-font: "Raleway", sans-serif;
   --body-font: "Montserrat", sans-serif;
   --aqua-color: #e0fbfc;
-  --black-color: #05060a;
-  --navy-color: #17223a;
+  --black-color: #07080d;
+  --navy-color: #151929;
   --purple-color: #ccc9e7;
   --white-color: #f2f4f8;
 }
@@ -93,6 +93,7 @@ body {
 
 #home h1 {
   display: inline-block;
+  padding-left: 3px;
   padding-right: 36px;
   padding-top: 15px;
   margin-bottom: 20px;
@@ -120,6 +121,7 @@ body {
 
 #projects h2 {
   display: inline-block;
+  padding-left: 3px;
   padding-right: 36px;
   padding-top: 15px;
   margin-bottom: 20px;
@@ -172,6 +174,7 @@ body {
 
 #skills h2 {
   display: inline-block;
+  padding-left: 3px;
   padding-right: 36px;
   padding-top: 15px;
   margin-bottom: 20px;
@@ -208,12 +211,17 @@ body {
 
 #contact h2 {
   display: inline-block;
+  padding-left: 3px;
   padding-right: 36px;
   padding-top: 15px;
   margin-bottom: 20px;
   background-color: var(--aqua-color);
   color: var(--navy-color);
   border-radius: 1px;
+}
+
+.contact-container {
+  margin-bottom: 40px;
 }
 
 .my-name {
@@ -224,7 +232,7 @@ body {
 .contact-link a {
   color: var(--purple-color);
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 .contact-link-underline {
