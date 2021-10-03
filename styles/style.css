@@ -74,10 +74,11 @@ body {
 #home {
   color: var(--white-color);
   background-color: var(--black-color);
+  padding-top: 30px;
 }
 
 .portrait-img {
-  animation: animate 0.8s forwards;
+  animation: animate 1s forwards;
   border-radius: 1px;
 }
 
@@ -99,10 +100,6 @@ body {
   color: var(--black-color);
   border-radius: 1px;
 }
-
-/* .home-column-heading {
-  padding-top: 50px;
-} */
 
 #animated-arrow {
   color: var(--purple-color);
@@ -135,7 +132,7 @@ body {
   /* border: 8px solid var(--purple-color) !important; */
   border-radius: 1px !important;
   transition: transform 0.2s !important;
-  animation: border-animate 0.8s forwards;
+  animation: border-animate 1s forwards;
   box-sizing: unset;
 }
 
@@ -283,5 +280,12 @@ button:hover {
   .contact-left {
     padding-left: 0;
     text-align: center;
+  }
+}
+
+@media only screen and (min-width: 752px) {
+  .nav-item {
+    color: var(--purple-color) !important;
+    padding: 0 40px;
   }
 }
