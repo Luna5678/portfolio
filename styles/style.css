@@ -77,7 +77,7 @@ body {
 }
 
 .portrait-img {
-  animation: animate 0.8s forwards;
+  animation: animate 0.5s forwards;
   border-radius: 1px;
 }
 
@@ -103,7 +103,7 @@ body {
 #animated-arrow {
   color: var(--purple-color);
   margin-top: 40px;
-  transition: transform 0.3s;
+  transition: transform 0.2s;
 }
 
 #animated-arrow:hover {
@@ -128,13 +128,24 @@ body {
 }
 
 .card {
-  border: 3px solid var(--purple-color) !important;
+  /* border: 8px solid var(--purple-color) !important; */
   border-radius: 1px !important;
-  transition: transform 0.3s !important;
+  transition: transform 0.2s !important;
+  animation: border-animate 0.5s forwards;
+  box-sizing: unset;
 }
 
 .card:hover {
   transform: scale(1.05);
+}
+
+@keyframes border-animate {
+  from {
+    border: none;
+  }
+  to {
+    border: 8px solid var(--purple-color);
+  }
 }
 
 .card-link {
@@ -231,13 +242,13 @@ body {
 }
 
 input {
-  border: solid 3px var(--purple-color) !important;
+  border: solid 4px var(--purple-color) !important;
   font-family: var(--body-font) !important;
   border-radius: 1px !important;
 }
 
 textarea {
-  border: solid 3px var(--purple-color) !important;
+  border: solid 4px var(--purple-color) !important;
   font-family: var(--body-font);
   border-radius: 1px !important;
 }
@@ -245,10 +256,11 @@ textarea {
 button {
   background-color: var(--purple-color) !important;
   color: white !important;
-  border: solid 3px white !important;
+  border: solid 4px white !important;
   padding: 12px 30px !important;
   transition: transform 0.3s !important;
   border-radius: 1px !important;
+  font-family: var(--headings-font) !important;
 }
 
 button:hover {
@@ -259,6 +271,7 @@ button:hover {
   font-family: var(--headings-font);
   font-weight: 700;
   font-size: 1.2rem;
+  padding-top: 12px;
 }
 
 @media only screen and (max-width: 752px) {
