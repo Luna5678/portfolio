@@ -29,6 +29,7 @@ h1,
 h2,
 h3 {
   font-family: var(--headings-font);
+  color: var(--color-white);
 }
 
 h2 {
@@ -198,6 +199,10 @@ a:hover {
   padding: 25px 0;
 }
 
+.about__content p {
+  margin: 10px;
+}
+
 .about__container__left .about__right-quote {
   align-self: end;
 }
@@ -218,6 +223,17 @@ img.portrait__img {
 
 #projects h2 {
   color: var(--color-lavender);
+}
+
+.projects__item {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 40px;
+  background-color: #2c3338;
+}
+
+.projects__item img {
+  width: 600px;
 }
 
 /* .card { */
@@ -241,7 +257,7 @@ img.portrait__img {
   }
 } */
 
-.card-link {
+/* .card-link {
   text-decoration: underline;
   font-weight: 600;
   font-size: 1.15rem;
@@ -253,7 +269,7 @@ img.portrait__img {
 
 .card-link:hover {
   text-decoration: wavy underline;
-}
+} */
 
 /* SKILLS */
 
