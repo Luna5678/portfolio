@@ -26,10 +26,11 @@
 
   <!-- NAV -->
   <div id="nav">
-    <a class="nav-item" href="#home"> Home. </a>
-    <a class="nav-item" href="#projects"> Projects. </a>
-    <a class="nav-item" href="#skills"> Skills. </a>
-    <a class="nav-item" href="#contact"> Contact. </a>
+    <a class="nav-item" href="#home">Home</a>
+    <a class="nav-item" href="#home">About</a>
+    <a class="nav-item" href="#projects">Projects</a>
+    <a class="nav-item" href="#skills">Skills</a>
+    <a class="nav-item" href="#contact">Contact</a>
   </div>
 
   <!-- HOME -->
@@ -37,18 +38,20 @@
   <div id="home">
     <div class="section-body">
 
-      <img src="{% static 'images/memoji.png' %}" alt="Memoji" class="ui centered image home__memoji" />
+      <img src="./images/memoji.png" alt="Memoji" class="ui centered image home__memoji" />
       
-      <h3>Hi, I'm Lonna 👋🏼</h3>
-      <h2>Developing web applications with beautiful user interfaces.</h2>
-      <h3>Software Engineer who loves to make ideas come to life.
-        <br />
-        I specialize in front-end web development.
-        <br />
-        Based in Los Angeles, CA.
-      </h3>
+      <div class="home__intro">
+        <h3>Hi, I'm Lonna 👋🏼</h3>
+        <h2>Developing web applications with beautiful user interfaces.</h2>
+        <h3><span class="heading-bold">Software Engineer</span> who loves to make <span class="heading-bold">ideas</span> come to <span class="heading-bold">life</span>.
+          <br />
+          I specialize in front-end web development.
+          <br />
+          Based in Los Angeles, CA.
+        </h3>
+      </div>
       
-      <button>Contact</button>
+      <a class="button" href="#contact">Contact</a>
       
       <!-- <div class="ui stackable two column middle aligned grid">
         <div class="row">

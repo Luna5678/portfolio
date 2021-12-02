@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Raleway:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Raleway:wght@400;700&display=swap");
 
 /* GLOBAL */
 html {
@@ -9,15 +9,24 @@ html {
   --headings-font: "Raleway", sans-serif;
   --body-font: "Montserrat", sans-serif;
   --aqua-color: #e0fbfc;
-  --black-color: #07080d;
   --navy-color: #151929;
   --purple-color: #ccc9e7;
-  --white-color: #f2f4f8;
+  --color-black: #040e0f;
+  --color-white: #e8eaed;
+  --color-lavender: #cdc0f0;
+  --color-light-cyan: #e0fbfc;
+  --color-light-teal: #76bdc0;
+  --color-teal: #0c7f83;
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: var(--headings-font);
+}
+
+h3 {
+  font-weight: 400;
 }
 
 p {
@@ -25,8 +34,12 @@ p {
 }
 
 body {
-  background-color: var(--black-color);
+  background-color: var(--color-black);
   font-family: var(--body-font);
+}
+
+.heading-bold {
+  font-weight: 700;
 }
 
 .section-body {
@@ -40,12 +53,33 @@ body {
   font-family: var(--headings-font) !important;
 }
 
+.button {
+  background-color: var(--color-light-teal);
+  border: none;
+  color: var(--color-white) !important;
+  padding: 15px 30px;
+  transition: transform 0.3s !important;
+  border-radius: 50px;
+  font-family: var(--body-font) !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.button:hover {
+  background: linear-gradient(
+    to right,
+    var(--color-lavender),
+    var(--color-light-teal)
+  );
+}
+
 /* NAV */
 
 #nav {
-  background-image: linear-gradient(rgba(5, 6, 10, 1), rgba(5, 6, 10, 0.5));
+  background: linear-gradient(rgba(4, 14, 15, 1), rgba(4, 14, 15, 0.6));
   font-family: var(--headings-font);
-  height: 60px;
+  height: 100px;
   margin: auto;
   position: -webkit-sticky;
   position: fixed;
@@ -55,29 +89,46 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 60px;
+}
+
+#nav a {
+  text-decoration: none;
+  color: var(--color-light-cyan) !important;
+  padding: 15px 30px;
 }
 
 .nav-item {
-  color: var(--purple-color) !important;
-  padding: 0 15px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
   text-decoration: underline;
+  text-transform: uppercase;
+  border-radius: 50px;
 }
 
 .nav-item:hover {
-  text-decoration: wavy underline;
+  background: linear-gradient(
+    to right,
+    var(--color-lavender),
+    var(--color-light-teal)
+  );
 }
 
 /* HOME */
 
 #home {
-  color: var(--white-color);
-  background-color: var(--black-color);
-  padding-top: 30px;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  padding-top: 100px;
+  text-align: center;
 }
 
-.portrait-img {
+.home__intro {
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+/* .portrait-img {
   animation: animate 1s forwards;
   border-radius: 1px;
 }
@@ -89,7 +140,7 @@ body {
   to {
     box-shadow: 20px 20px var(--aqua-color);
   }
-}
+} */
 
 #home h1 {
   display: inline-block;
@@ -98,7 +149,7 @@ body {
   padding-top: 15px;
   margin-bottom: 20px;
   background-color: var(--aqua-color);
-  color: var(--black-color);
+  color: var(--color-black);
   border-radius: 1px;
 }
 
@@ -112,9 +163,13 @@ body {
   transform: scale(1.2);
 }
 
+.home__memoji {
+  width: 200px;
+}
+
 /* PROJECTS */
 #projects {
-  color: var(--white-color);
+  color: var(--color-white);
   background-color: var(--navy-color);
   width: 100%;
 }
@@ -168,7 +223,7 @@ body {
 /* SKILLS */
 
 #skills {
-  background-color: var(--white-color);
+  background-color: var(--color-light-teal);
   width: 100%;
 }
 
@@ -205,8 +260,8 @@ body {
 /* CONTACT */
 
 #contact {
-  color: var(--white-color);
-  background-color: var(--black-color);
+  color: var(--color-white);
+  background-color: var(--color-black);
 }
 
 #contact h2 {
@@ -261,20 +316,6 @@ textarea {
   border: solid 4px var(--purple-color) !important;
   font-family: var(--body-font);
   border-radius: 1px !important;
-}
-
-button {
-  background-color: var(--purple-color) !important;
-  color: white !important;
-  border: solid 4px white !important;
-  padding: 12px 30px !important;
-  transition: transform 0.3s !important;
-  border-radius: 1px !important;
-  font-family: var(--headings-font) !important;
-}
-
-button:hover {
-  transform: scale(1.1);
 }
 
 .input-label {
