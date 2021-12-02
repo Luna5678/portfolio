@@ -19,18 +19,30 @@ html {
   --color-teal: #0c7f83;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3 {
   font-family: var(--headings-font);
 }
 
+h2 {
+  font-size: 2.5rem;
+}
+
 h3 {
   font-weight: 400;
+  font-size: 1.5rem;
 }
 
 p {
   font-family: var(--body-font);
+  color: var(--color-white);
 }
 
 body {
@@ -42,12 +54,12 @@ body {
   font-weight: 700;
 }
 
-.section-body {
+/* .section-body {
   width: 80%;
   max-width: 1200px;
   margin: auto;
   padding: 60px 0;
-}
+} */
 
 .header {
   font-family: var(--headings-font) !important;
@@ -72,6 +84,10 @@ body {
     var(--color-lavender),
     var(--color-light-teal)
   );
+}
+
+.svg-icon-large {
+  width: 35px;
 }
 
 /* NAV */
@@ -121,6 +137,8 @@ body {
   background-color: var(--color-black);
   padding-top: 100px;
   text-align: center;
+  /* height: 85vh; */
+  margin: 50px auto;
 }
 
 .home__intro {
@@ -153,7 +171,7 @@ body {
   border-radius: 1px;
 }
 
-#animated-arrow {
+/* #animated-arrow {
   color: var(--purple-color);
   margin-top: 40px;
   transition: transform 0.2s;
@@ -161,10 +179,54 @@ body {
 
 #animated-arrow:hover {
   transform: scale(1.2);
-}
+} */
 
 .home__memoji {
   width: 200px;
+}
+
+/* ABOUT ME */
+#about {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 100px 0;
+}
+
+#about h2 {
+  color: var(--color-lavender);
+}
+
+.about__container {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+.about__container__left {
+  display: grid;
+  grid-template-columns: 38px 1fr 38px;
+  gap: 15px;
+}
+
+.about__container__left .about__left-quote {
+  align-self: start;
+}
+
+.about__container__left .about__content {
+  align-self: center;
+  font-size: 1.1rem;
+  padding: 25px 0;
+}
+
+.about__container__left .about__right-quote {
+  align-self: end;
+}
+
+img.portrait__img {
+  border-radius: 120px;
+  width: 330px;
+  align-self: center;
 }
 
 /* PROJECTS */
@@ -336,5 +398,18 @@ textarea {
   .nav-item {
     color: var(--purple-color) !important;
     padding: 0 40px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #about {
+    width: 90%;
+  }
+
+  .about__container {
+    display: flex;
+    gap: 10px;
+    flex-direction: column-reverse;
+    align-items: center;
   }
 }
