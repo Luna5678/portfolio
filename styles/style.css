@@ -50,16 +50,18 @@ body {
   font-family: var(--body-font);
 }
 
+a {
+  color: var(--color-teal);
+}
+
+a:hover {
+  color: var(--color-light-teal);
+  text-decoration: underline;
+}
+
 .heading-bold {
   font-weight: 700;
 }
-
-/* .section-body {
-  width: 80%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 60px 0;
-} */
 
 .header {
   font-family: var(--headings-font) !important;
@@ -130,14 +132,13 @@ body {
   );
 }
 
-/* HOME */
+/* HOME SECTION */
 
 #home {
   color: var(--color-white);
   background-color: var(--color-black);
   padding-top: 100px;
   text-align: center;
-  /* height: 85vh; */
   margin: 50px auto;
 }
 
@@ -146,20 +147,6 @@ body {
   padding: 10px;
   margin: 40px auto;
 }
-
-/* .portrait-img {
-  animation: animate 1s forwards;
-  border-radius: 1px;
-}
-
-@keyframes animate {
-  from {
-    box-shadow: none;
-  }
-  to {
-    box-shadow: 20px 20px var(--aqua-color);
-  }
-} */
 
 #home h1 {
   display: inline-block;
@@ -172,26 +159,17 @@ body {
   border-radius: 1px;
 }
 
-/* #animated-arrow {
-  color: var(--purple-color);
-  margin-top: 40px;
-  transition: transform 0.2s;
-}
-
-#animated-arrow:hover {
-  transform: scale(1.2);
-} */
-
 .home__memoji {
   width: 200px;
 }
 
-/* ABOUT ME */
+/* ABOUT ME SECTION */
+
 #about {
   width: 80%;
   max-width: 1200px;
   margin: auto;
-  padding: 100px 0;
+  padding: 100px 0 50px 0;
 }
 
 #about h2 {
@@ -232,25 +210,19 @@ img.portrait__img {
 
 /* PROJECTS */
 #projects {
-  color: var(--color-white);
-  background-color: var(--navy-color);
-  width: 100%;
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 100px 0 50px 0;
 }
 
 #projects h2 {
-  display: inline-block;
-  padding-left: 3px;
-  padding-right: 36px;
-  padding-top: 15px;
-  margin-bottom: 20px;
-  background-color: var(--aqua-color);
-  color: var(--navy-color);
-  border-radius: 1px;
+  color: var(--color-lavender);
 }
 
-.card {
-  /* border: 8px solid var(--purple-color) !important; */
-  border-radius: 1px !important;
+/* .card { */
+/* border: 8px solid var(--purple-color) !important; */
+/* border-radius: 1px !important;
   transition: transform 0.2s !important;
   animation: border-animate 1s forwards;
   box-sizing: unset;
@@ -267,7 +239,7 @@ img.portrait__img {
   to {
     border: 8px solid var(--purple-color);
   }
-}
+} */
 
 .card-link {
   text-decoration: underline;
