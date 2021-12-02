@@ -142,7 +142,8 @@ body {
 }
 
 .home__intro {
-  max-width: 500px;
+  max-width: 520px;
+  padding: 10px;
   margin: 40px auto;
 }
 
