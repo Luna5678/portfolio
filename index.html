@@ -58,7 +58,7 @@
 
     <div class="about__container">
       <div class="about__container__left">
-        <img src="images/left-quote-colored.png" class="about__left-quote svg-icon-large" />
+        <img src="images/section-icon-about-left.svg" class="about__left-quote svg-icon-large" />
         <div class="about__content">
           <p>
             With over 3 years of project management experience, I’ve gotten a deep understanding of users and improved my communication skills while solving problems on multiple levels. Because I wanted to support my team better, I decided to learn about software engineering on my free time. Eventually, the interest became a passion.
@@ -71,7 +71,7 @@
           </p>
 
         </div>
-        <img src="images/right-quote-colored.png" class="about__right-quote svg-icon-large" />
+        <img src="images/section-icon-about-right.svg" class="about__right-quote svg-icon-large" />
       </div>
       <div class="about__container__right">
         <img src="./images/portrait.png" alt="Lonna Profile Picture" class="portrait__img" />
@@ -82,15 +82,60 @@
   <!-- PROJECTS -->
 
   <div id="projects">
-    <h2>Latest Projects</h2>
+    <div id="projects__heading">
+      <img src="./images/code-svgrepo-com.svg" class="svg-icon-large" />
+      <h2>Latest Projects</h2>
+    </div>
+    </div>
+
+    <!-- PROJECTS - OUTLET  -->
+      <div class="projects__item__container">
+        <div class="projects__item__container__background">
+        </div>
+        <div class="projects__item__container__image">
+          <img src="./images/outlet-1.png" alt="Outlet Project Cover Photo" />
+        </div>
+        <div class="projects__item__container__content">
+          <h3><span class="heading-bold">Outlet</span></h3>
+      
+      
+          <div class="description">
+            <p>
+              Freeform art application built for the Mintbean Hackathon in November 2021.
+            </p>
+            <p>
+              <span class="body-bold">Prompt:</span> Build an app that lets people express their creativity in a visual format. You can build ANY application you'd like, as long as the user can drag my mouse across the screen to make free-form lines.
+            </p>
+            <p>
+              <span class="body-bold">Result:</span> Fully responsive front-end application. Integrated ability to draw freehand, lines, rectangles, circles in any color. Added eraser, download, and a clear button with a confirmation modal for good user experience.
+            </p>
+          </div>
+      
+          <div class="projects__item__tech">
+            <p>React</p>
+            <p>Sass</p>
+          </div>
+      
+          <div class="projects__item__links">
+            <a href="https://github.com/Luna5678/Outlet" target="_blank">
+              <i class="big github square icon"></i>
+            </a>
+            <a href="https://outlet.vercel.app/" target="_blank">
+              <i class="big external square alternate icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
 
       <!-- PROJECTS - CRAVINGS  -->
-      <div class="projects__item">
-        <div class="image">
-          <img src="./images/cravings-1.png" alt="Cravings Cover Photo" />
+      <div class="projects__item__container">
+        <div class="projects__item__container__background">
         </div>
-        <div class="projects__item__content">
-          <h3>Cravings</h3>
+        <div class="projects__item__container__image">
+          <img src="./images/cravings-1.png" alt="Cravings Project Cover Photo" />
+        </div>
+        <div class="projects__item__container__content">
+          <h3><span class="heading-bold">Cravings</span></h3>
 
 
           <div class="description">
@@ -98,78 +143,113 @@
               As an avid Yelp user, I’ve always had trouble finding the latest restaurant menu. Cravings solves that. You can search popular Los Angeles, CA restaurants by cuisine, dietary restrictions, or name. When one interests you, a current menu with current prices are promised so any surprises are only for your taste buds.
             </p>
             <p>
-              Fully responsive full stack application. Create your own profile, write reviews, and check out where other food
+              <span class="body-bold">Fully responsive full stack</span> application. Create your own profile, write reviews, and check out where other food
               enthusiasts have gone to satisfy their cravings.
-            </p>
-            <p>
-              To try a test account, please use the following credentials:
-              <br />
-              Username: Demo
-              <br />
-              Password: DemoAccount
             </p>
           </div>
 
-          <p>NodeJS | Express | MongoDB</p>
+          <div class="projects__item__tech">
+            <p>Node.js</p>
+            <p>Express.js</p>
+            <p>MongoDB</p>
+            <p>JavaScript</p>
+          </div>
+
+          <div class="projects__item__demo">
+            <p>
+              Test Account: Demo | DemoAccount
+            </p>
+          </div>
+          
+
 
           <div class="projects__item__links">
               <a href="https://github.com/Luna5678/Cravings/tree/main/" target="_blank">
-                View Code
+                <i class="big github square icon"></i>
               </a>
               <a href="https://cravings-ll.herokuapp.com/" target="_blank">
-                View Live Site
+                <i class="big external square alternate icon"></i>
               </a>
           </div>
         </div>
       </div>
 
-          <p>Wayfarer</p>
-          <p>Django | Python | PostgreSQL</p>
-          <p>
-            Share and find tips about travel destinations around the world.
-            Wayfarer builds a community for people seeking to travel or
-            learn about the art and architectures around the world. You can
-            build a profile and create posts.
-            <hr />
-            To view a test account, use the following credentials:
-            <br />
-            Demo | DemoAccount
-            <hr />
-          </p>
-          <div>
-              <a href="https://github.com/Luna5678/ProjectWayfarer/tree/main" target="_blank">
-                View Code
-              </a>
-              <a href="https://wayfarer-art-app.herokuapp.com/" target="_blank">
-                View Live Site
-              </a>
+      <div class="projects__item__container">
+        <div class="projects__item__container__background">
+        </div>
+        <div class="projects__item__container__image">
+          <img src="./images/wayfarer-1.png" alt="Wayfarer Project Cover Photo" />
+        </div>
+        <div class="projects__item__container__content">
+          <h3><span class="heading-bold">Wayfarer</span></h3>
+      
+      
+          <div class="description">
+            <p>
+              A web app to store your favorite adventure memories, and find places to make new ones. Geared towards must-see art
+              pieces, you can share any highlights from your travels.
+            </p>
+            <p>
+              Create an account, describe what you recommend or do not recommend, and view what others had to say at the hottest art
+              desinations across the globe.
+            </p>
+            <p>
+              <span class="body-bold">Collaborated with 3 teammates</span> to build this full stack application in a 1 week sprint.
+            </p>
           </div>
-
+      
+          <div class="projects__item__tech">
+            <p>Django</p>
+            <p>PostgreSQL</p>
+            <p>Python</p>
+          </div>
+      
+          <div class="projects__item__demo">
+            <p>
+              Test Account: Demo | DemoAccount
+            </p>
+          </div>
+      
+      
+      
+          <div class="projects__item__links">
+            <a href="https://github.com/Luna5678/ProjectWayfarer" target="_blank">
+              <i class="big github square icon"></i>
+            </a>
+            <a href="https://wayfarer-art-app.herokuapp.com/" target="_blank">
+              <i class="big external square alternate icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
 
   </div>
 
   <!-- SKILLS -->
   <div id="skills">
-    <div class="section-body">
-      <h2>Skills.</h2>
-      <div class="ui centered images">
-        <img src="./images/skills-css-logo.png" alt="CSS 3 Logo" data-content="CSS3" class="ui image skills-logo" />
-        <img src="./images/skills-html-logo.png" alt="HTML 5 Logo" data-content="HTML5" class="ui image skills-logo" />
-        <img src="./images/skills-js-logo.png" alt="JavaScript Logo" data-content="JavaScript ES6" class="ui image skills-logo" />
-        <img src="./images/skills-mongodb-logo.png" alt="MongoDB Logo" data-content="MongoDB" class="ui image small skills-logo" />
-        <img src="./images/skills-mongoose-logo.png" alt="Mongoose Logo" data-content="Mongoose" class="ui image small skills-logo" />
-        <img src="./images/skills-node-js-logo.png" alt="Node.js Logo" data-content="Node.js" class="ui image skills-logo" />
-        <img src="./images/skills-express-logo.png" alt="Express Logo" data-content="Express.js" class="ui image skills-logo" />
-        <img src="./images/skills-sass-logo.png" alt="Sass Logo" data-content="Sass" class="ui image skills-logo" />
-        <img src="./images/skills-jquery-logo.png" alt="jQuery Logo" data-content="jQuery" class="ui image skills-logo" />
-        <img src="./images/skills-bootstrap-logo.png" alt="Bootstrap Logo" data-content="Bootstrap" class="ui image skills-logo" />
-        <img src="./images/skills-bulma-logo.png" alt="Bulma Logo" data-content="Bulma" class="ui image skills-logo" />
-        <img src="./images/skills-python-logo.png" alt="Python Logo" data-content="Python" class="ui image skills-logo" />
-        <img src="./images/skills-typescript-logo.png" alt="TypeScript Logo" data-content="TypeScript" class="ui image skills-logo" />
-        <img src="./images/skills-postgres-logo.png" alt="PostgreSQL Logo" data-content="PostgreSQL" class="ui image skills-logo" />
-        <img src="./images/skills-django-logo.png" alt="Django Logo" data-content="Django" class="ui image skills-logo" />
-        <img src="./images/skills-semanticui-logo.png" alt="Semantic UI Logo" data-content="Semantic UI" class="ui image skills-logo" />
-      </div>
+    <div class="skills__heading">
+      <img src="images/section-icon-skills.svg" class="svg-icon-large" />
+      <h2>Skills</h2>
+    </div>
+      
+    <div class="ui centered images skills__container">
+      <img src="./images/skills-css-logo.png" alt="CSS 3 Logo" data-content="CSS3" class="ui image skills-logo" />
+      <img src="./images/skills-html-logo.png" alt="HTML 5 Logo" data-content="HTML5" class="ui image skills-logo" />
+      <img src="./images/skills-js-logo.png" alt="JavaScript Logo" data-content="JavaScript ES6" class="ui image skills-logo" />
+      <img src="./images/skills-react-logo.svg" alt="React Logo" data-content="React" class="ui small image skills-logo" />
+      <img src="./images/skills-mongodb-logo.png" alt="MongoDB Logo" data-content="MongoDB" class="ui image small skills-logo" />
+      <img src="./images/skills-mongoose-logo.png" alt="Mongoose Logo" data-content="Mongoose" class="ui image small skills-logo" />
+      <img src="./images/skills-node-js-logo.png" alt="Node.js Logo" data-content="Node.js" class="ui image skills-logo" />
+      <img src="./images/skills-express-logo.png" alt="Express Logo" data-content="Express.js" class="ui image skills-logo" />
+      <img src="./images/skills-sass-logo.png" alt="Sass Logo" data-content="Sass" class="ui image skills-logo" />
+      <img src="./images/skills-jquery-logo.png" alt="jQuery Logo" data-content="jQuery" class="ui image skills-logo" />
+      <img src="./images/skills-bootstrap-logo.png" alt="Bootstrap Logo" data-content="Bootstrap" class="ui image skills-logo" />
+      <img src="./images/skills-bulma-logo.png" alt="Bulma Logo" data-content="Bulma" class="ui image skills-logo" />
+      <img src="./images/skills-python-logo.png" alt="Python Logo" data-content="Python" class="ui image skills-logo" />
+      <img src="./images/skills-typescript-logo.png" alt="TypeScript Logo" data-content="TypeScript" class="ui image skills-logo" />
+      <img src="./images/skills-postgres-logo.png" alt="PostgreSQL Logo" data-content="PostgreSQL" class="ui image skills-logo" />
+      <img src="./images/skills-django-logo.png" alt="Django Logo" data-content="Django" class="ui image skills-logo" />
+      <img src="./images/skills-semanticui-logo.png" alt="Semantic UI Logo" data-content="Semantic UI" class="ui image skills-logo" />
     </div>
   </div>
 
