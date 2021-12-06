@@ -1,10 +1,13 @@
 function toggleNav() {
-  const x = document.getElementById("nav");
+  const nav = document.getElementById("nav");
+  const navToggleIcon = document.getElementById("nav__icon");
 
-  if (x.className === "navbar") {
-    x.className += "responsive";
+  if (nav.className === "navbar") {
+    nav.className += " responsive";
+    navToggleIcon.innerHTML = "<i class='close icon big'></i>";
   } else {
-    x.className = "navbar"
+    nav.className = "navbar";
+    navToggleIcon.innerHTML = "<i class='bars icon big'></i>";
   }
 };
 

@@ -122,7 +122,7 @@ a:hover {
   gap: 60px;
 }
 
-#nav .nav__icon {
+#nav #nav__icon {
   display: none;
 }
 
@@ -562,7 +562,7 @@ img.portrait__img {
     display: none;
   }
 
-  #nav a.nav__icon {
+  #nav a#nav__icon {
     display: block;
   }
 
@@ -572,11 +572,15 @@ img.portrait__img {
 
   #nav.responsive {
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
+    background-color: rgba(4, 14, 15, 0.5);
+    height: auto;
+    padding-top: 30px;
   }
 
   #nav.responsive a {
-    display: inline-flex;
+    display: inline-block;
+    text-decoration: none;
   }
 
   .projects__item__container {
