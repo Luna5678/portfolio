@@ -299,6 +299,8 @@ img.portrait__img {
 
 .projects__item__tech {
   margin: 14px 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .projects__item__tech p {
