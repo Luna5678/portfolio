@@ -84,7 +84,6 @@ a:hover {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 1.2rem;
-  /* box-shadow: 3px 3px 7px rgba(209, 213, 219, 0.3); */
 }
 
 .button:hover {
@@ -121,6 +120,10 @@ a:hover {
   justify-content: center;
   align-items: center;
   gap: 60px;
+}
+
+#nav .nav__icon {
+  display: none;
 }
 
 #nav a {
@@ -532,55 +535,6 @@ img.portrait__img {
   display: block;
 }
 
-/* .contact__links .download-icon-large {
-  font-size: 2rem;
-} */
-
-/* .contact__links a:hover {
-  text-decoration: none;
-} */
-
-/* .contact-link a {
-  color: var(--purple-color);
-  font-weight: 600;
-  font-size: 1.3rem;
-}
-
-.contact-link-underline {
-  text-decoration: underline;
-}
-
-.contact-link-underline:hover {
-  text-decoration: wavy underline;
-}
-
-.contact-left {
-  padding-left: 40px;
-}
-
-.body-text-larger {
-  font-size: 1.2rem;
-} */
-
-/* input {
-  border: solid 4px var(--purple-color) !important;
-  font-family: var(--body-font) !important;
-  border-radius: 1px !important;
-}
-
-textarea {
-  border: solid 4px var(--purple-color) !important;
-  font-family: var(--body-font);
-  border-radius: 1px !important;
-}
-
-.input-label {
-  font-family: var(--headings-font);
-  font-weight: 700;
-  font-size: 1.2rem;
-  padding-top: 12px;
-} */
-
 @media only screen and (max-width: 752px) {
   .contact-left {
     padding-left: 0;
@@ -600,8 +554,29 @@ textarea {
 }
 
 @media only screen and (max-width: 1000px) {
+  #nav {
+    justify-content: space-around;
+  }
+
+  #nav a:not(:first-child) {
+    display: none;
+  }
+
+  #nav a.nav__icon {
+    display: block;
+  }
+
   #about {
     width: 90%;
+  }
+
+  #nav.responsive {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #nav.responsive a {
+    display: inline-flex;
   }
 
   .projects__item__container {
