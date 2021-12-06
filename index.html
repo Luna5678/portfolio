@@ -90,7 +90,7 @@
       <img src="./images/section-icon-projects.svg" class="svg-icon-large" />
       <h2>Latest Projects</h2>
     </div>
-    </div>
+    <!-- </div> -->
 
     <!-- PROJECTS - OUTLET  -->
       <div class="projects__item__container">
@@ -277,78 +277,54 @@
     </div>
 
     <div class="contact__links">
-        <a href="./files/LonnaLu-Resume.pdf" download>
+        <a href="./files/LonnaLu-Resume.pdf" download id="contact-links__download">
             <i class="save outline icon large"></i>
             Download Resume
         </a>
 
-        <a href="https://www.linkedin.com/in/lonna-lu/" target="_blank">
+        <a href="https://www.linkedin.com/in/lonna-lu/" target="_blank" id="contact-link__linkedin">
           <i class="linkedin icon large"></i>
           LinkedIn
         </a>
 
-        <a href="https://github.com/Luna5678" target="_blank">
+        <a href="https://github.com/Luna5678" target="_blank" id="contact-link__github">
           <i class="github icon large"></i>
           Github
         </a>
 
-        <a href="mailto:lonna.dev@gmail.com" target="_blank">
+        <a href="mailto:lonna.dev@gmail.com" target="_blank" id="contact-link__email">
           <i class="envelope icon large"></i>
           Email
         </a>
     </div>
       
-    
-  
-      <div class="ui stackable two column grid">
-        <div class="row">
-          <!-- CONTACT LEFT SIDE -->
-          <div class="six wide column">
-            <div class="contact-left">
-              <div class="contact-container">
-                <p><span class="body-text-larger">Let's connect!</span></p>
-              </div>
-              
-              <div class="contact-container">
-                <p>
-                  <span class="my-name">
-                    Lonna Lu
-                    <br />
-                    Los Angeles, CA
-                  </span>
-                </p>
-              </div>
-              
-              <p class="contact-link">
-                <a href="./files/LonnaLu-Resume.pdf" download>
-                  <i class="download icon large"></i>
-                  <span class="contact-link-underline"> RESUME </span>
-                </a>
-              </p>
-              <p class="contact-link">
-                <a href="https://www.linkedin.com/in/lonna-lu/" target="_blank">
-                  <i class="linkedin icon large"></i>
-                  <span class="contact-link-underline"> LINKEDIN </span>
-                </a>
-              </p>
-              <p class="contact-link">
-                <a href="https://github.com/Luna5678" target="_blank">
-                  <i class="github icon large"></i>
-                  <span class="contact-link-underline"> GITHUB </span>
-                </a>
-              </p>
-              <p class="contact-link">
-                <a href="mailto:lonna.dev@gmail.com" target="_blank">
-                  <i class="envelope icon large"></i>
-                  <span class="contact-link-underline"> EMAIL </span>
-                </a>
-              </p>
-            </div>
+    <div id="contact__form">
+      <div class="contact__form__heading">
+        <img src="images/icon-paper-plane.svg" class="svg-icon-small">
+        <h2><span class="heading-bold">Say Hello!</span></h2>
+      </div>
+
+      <div class="contact__form__container">
+        <form action="https://formspree.io/f/xgerqyky" method="POST">
+          <div class="contact__form__fields">
+            <input type="text" name="name" placeholder="Your Name" id="name" />
+
+            <input type="email" name="email" placeholder="Your Email" id="email" />
+
+            <textarea rows="5" name="message" placeholder="Your Message" id="message"></textarea>
           </div>
+          
+
+          <button type="submit" class="button contact-button">
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+    
   
           <!-- CONTACT RIGHT SIDE -->
 
-          <div class="ten wide column">
             <form action="https://formspree.io/f/xgerqyky" method="POST">
               <div class="ui form stackable grid">
                 <div class="two column row">
@@ -388,7 +364,6 @@
                 </div>
             </form>
           </div>
-        </div>
       </div>
     </div>
   </div>
