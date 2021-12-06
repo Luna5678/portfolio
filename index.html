@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- SEMANTIC UI -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet" />
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   
   <!-- JQUERY -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -25,41 +29,59 @@
 <body>
 
   <!-- NAV -->
-  <div id="nav">
-    <a class="nav-item" href="#home"> Home. </a>
-    <a class="nav-item" href="#projects"> Projects. </a>
-    <a class="nav-item" href="#skills"> Skills. </a>
-    <a class="nav-item" href="#contact"> Contact. </a>
+  <div class="navbar" id="nav">
+    <a class="nav-item" href="#home">Home</a>
+    <a class="nav-item" href="#about">About</a>
+    <a class="nav-item" href="#projects">Projects</a>
+    <a class="nav-item" href="#skills">Skills</a>
+    <a class="nav-item" href="#contact">Contact</a>
+    <a href="javascript:void(0);" id="nav__icon" onclick="toggleNav()">
+      <i class="bars icon big"></i>
+    </a>
   </div>
 
   <!-- HOME -->
   
   <div id="home">
-    <div class="section-body">
-      <div class="ui stackable two column middle aligned grid">
-        <div class="row">
-          <div class="column">
-            <img src="./images/portrait.png" alt="Profile picture" class="ui centered image portrait-img" />
-          </div>
-  
-          <div class="column">
-            <h1 class="home-column-heading">Hi, I'm Lonna.</h1>
-            <p>
-              I am a full stack web developer who loves to make ideas come to
-              life! 
-            </p>
-            <p>
-              I strive to grow as a person and as a professional by embracing my curiosity and adaptability to challenges. My reliability and ambition manifests throughout all roles and responsibilities. I am excited to translate my problem solving and teamwork skills into building complex and valuable software systems.
-            </p>
-            <p>
-              Formerly a project coordinator for a web development company, now a graduate of General Assembly's Software Engineering Immersive. I grew an interest for what really happens behind the scenes, and eventually the interest became a passion.
-            </p>
-          </div>
+    <img src="./images/memoji.png" alt="Memoji" class="ui centered image home__memoji" />
+    
+    <div class="home__intro">
+      <h3>Hi, I'm Lonna 👋🏼</h3>
+      <h2>Developing web applications with beautiful user interfaces.</h2>
+      <h3><span class="heading-bold">Software Engineer</span> who loves to make <span class="heading-bold">ideas</span> come to <span class="heading-bold">life</span>.
+        <br />
+        I specialize in front-end web development.
+        <br />
+        Based in Los Angeles, CA.
+      </h3>
+    </div>
+    
+    <a class="button contact-button" href="#contact">Contact</a>
+  </div>
+
+  <!-- ABOUT -->
+  <div id="about">
+    <h2>About Me</h2>
+
+    <div class="about__container">
+      <div class="about__container__left">
+        <img src="images/section-icon-about-left.svg" class="about__left-quote svg-icon-large" />
+        <div class="about__content">
+          <p>
+            With over 3 years of project management experience, I’ve gotten a deep understanding of users and improved my communication skills while solving problems on multiple levels. Because I wanted to support my team better, I decided to learn about software engineering on my free time. Eventually, the interest became a passion.
+          </p>
+          <p>
+            My curiosity and ambition led me to complete <a href="https://generalassemb.ly/why-ga-is-worth-it" target="_blank">General Assembly</a>’s Software Engineering Immersive bootcamp. Since then, I’ve been <a href="https://github.com/Luna5678" target="_blank">building apps</a> and participating in Hackathons using different tech stacks.
+          </p>
+          <p>
+            When I’m not developing applications, you can probably find me enjoying a hiking trail or milk tea!
+          </p>
+
         </div>
+        <img src="images/section-icon-about-right.svg" class="about__right-quote svg-icon-large" />
       </div>
-  
-      <div class="ui centered grid">
-        <a href="#projects"><i class="big chevron down icon" id="animated-arrow"></i></a>
+      <div class="about__container__right">
+        <img src="./images/portrait.png" alt="Lonna Profile Picture" class="portrait__img" />
       </div>
     </div>
   </div>
@@ -67,235 +89,239 @@
   <!-- PROJECTS -->
 
   <div id="projects">
-    <div class="section-body">
-      <h2>Projects.</h2>
+    <div id="projects__heading">
+      <img src="./images/section-icon-projects.svg" class="svg-icon-large" />
+      <h2>Latest Projects</h2>
+    </div>
+    <!-- </div> -->
 
-      <div class="ui cards">
-
-        <!-- CRAVINGS CARD  -->
-        <div class="ui centered card">
-          <div class="image">
-            <img src="./images/cravings-1.png" alt="Cravings Cover Photo" />
-          </div>
-          <div class="content">
-            <div class="header">Cravings</div>
-            <div class="meta">NodeJS | Express | MongoDB</div>
-            <div class="description">
-              Search popular restaurants in the heart of Los Angeles, CA.
-              You can view reviews and user profiles. Upon creating an
-              account, you can customize your profile, add reviews, and check
-              out reviews from other users.
-              <hr />
-              To view a test account, use the following credentials:
-              <br />
-              Demo | DemoAccount
-              <hr />
-            </div>
-            <div class="extra content">
-              <span class="right floated card-link">
-                <a href="https://github.com/Luna5678/Cravings/tree/main/" target="_blank">
-                  View Code
-                </a>
-              </span>
-              <span class="card-link">
-                <a href="https://cravings-ll.herokuapp.com/" target="_blank">
-                  View Live Site
-                </a>
-              </span>
-            </div>
-          </div>
+    <!-- PROJECTS - OUTLET  -->
+      <div class="projects__item__container">
+        <div class="projects__item__container__background">
         </div>
-
-        <!-- WAYFARER CARD -->
-        <div class="ui centered card">
-          <div class="image">
-            <img src="./images/wayfarer-1.png" alt="Wayfarer Cover Photo" />
-          </div>
-          <div class="content">
-            <div class="header">Wayfarer</div>
-            <div class="meta">Django | Python | PostgreSQL</div>
-            <div class="description">
-              Share and find tips about travel destinations around the world.
-              Wayfarer builds a community for people seeking to travel or
-              learn about the art and architectures around the world. You can
-              build a profile and create posts.
-              <hr />
-              To view a test account, use the following credentials:
-              <br />
-              Demo | DemoAccount
-              <hr />
-            </div>
-            <div class="extra content">
-              <span class="right floated card-link">
-                <a href="https://github.com/Luna5678/ProjectWayfarer/tree/main" target="_blank">
-                  View Code
-                </a>
-              </span>
-              <span class="card-link">
-                <a href="https://wayfarer-art-app.herokuapp.com/" target="_blank">
-                  View Live Site
-                </a>
-              </span>
-            </div>
-          </div>
+        <div class="projects__item__container__image">
+          <img src="./images/outlet-1.png" alt="Outlet Project Cover Photo" />
         </div>
-
-        <!-- QUELUE CARD -->
-        <div class="ui centered card">
-          <div class="image">
-            <img src="./images/quelue-1.png" alt="quelue Cover Photo" />
+        <div class="projects__item__container__content">
+          <h3><span class="heading-bold">Outlet</span></h3>
+      
+      
+          <div class="description">
+            <p>
+              Freeform art application built for the Mintbean Hackathon in November 2021.
+            </p>
+            <p>
+              <span class="body-bold">Prompt:</span> Build an app that lets people express their creativity in a visual format. You can build ANY application you'd like, as long as the user can drag my mouse across the screen to make free-form lines.
+            </p>
+            <p>
+              <span class="body-bold">Result:</span> Fully responsive front-end application. Integrated ability to draw freehand, lines, rectangles, circles in any color. Added eraser, download, and a clear button with a confirmation modal for good user experience.
+            </p>
           </div>
-          <div class="content">
-            <div class="header">quelue</div>
-            <div class="meta">NodeJS | Express | MongoDB</div>
-            <div class="description">
-              Aimed to recreate certain functionalities of streaming services, such as Hulu, and improve on the user experience. This app allows you to easily add shows to your queue, and then return to your queue to pick up where you left off.
-              <hr />
-              To view a test account, use the following credentials:
-              <br />
-              Demo | DemoAccount
-              <hr />
-            </div>
-            <div class="extra content">
-              <span class="right floated card-link">
-                <a href="https://github.com/Luna5678/quelue/tree/main" target="_blank">
-                  View Code
-                </a>
-              </span>
-              <span class="card-link">
-                <a href="http://quelue.herokuapp.com/login" target="_blank">
-                  View Live Site
-                </a>
-              </span>
-            </div>
+      
+          <div class="projects__item__tech">
+            <p>React</p>
+            <p>Sass</p>
+          </div>
+      
+          <div class="projects__item__links">
+            <a href="https://github.com/Luna5678/Outlet" target="_blank">
+              <i class="big github square icon"></i>
+            </a>
+            <a href="https://outlet.vercel.app/" target="_blank">
+              <i class="big external square alternate icon"></i>
+            </a>
           </div>
         </div>
       </div>
-    </div>
+
+      <!-- PROJECTS - CRAVINGS  -->
+      <div class="projects__item__container">
+        <div class="projects__item__container__background">
+        </div>
+        <div class="projects__item__container__image">
+          <img src="./images/cravings-1.png" alt="Cravings Project Cover Photo" />
+        </div>
+        <div class="projects__item__container__content">
+          <h3><span class="heading-bold">Cravings</span></h3>
+
+
+          <div class="description">
+            <p>
+              As an avid Yelp user, I’ve always had trouble finding the latest restaurant menu. Cravings solves that. You can search popular Los Angeles, CA restaurants by cuisine, dietary restrictions, or name. When one interests you, the current menu with current prices are promised so any surprises left are for your taste buds only.
+            </p>
+            <p>
+              <span class="body-bold">Fully responsive full stack</span> application. Create your own profile, write reviews, and check out where other food
+              enthusiasts have gone to satisfy their cravings.
+            </p>
+          </div>
+
+          <div class="projects__item__tech">
+            <p>Node.js</p>
+            <p>Express.js</p>
+            <p>MongoDB</p>
+            <p>JavaScript</p>
+          </div>
+
+          <div class="projects__item__demo">
+            <p>
+              Test Account: Demo | DemoAccount
+            </p>
+          </div>
+          
+
+
+          <div class="projects__item__links">
+              <a href="https://github.com/Luna5678/Cravings/tree/main/" target="_blank">
+                <i class="big github square icon"></i>
+              </a>
+              <a href="https://cravings-ll.herokuapp.com/" target="_blank">
+                <i class="big external square alternate icon"></i>
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects__item__container">
+        <div class="projects__item__container__background">
+        </div>
+        <div class="projects__item__container__image">
+          <img src="./images/wayfarer-1.png" alt="Wayfarer Project Cover Photo" />
+        </div>
+        <div class="projects__item__container__content">
+          <h3><span class="heading-bold">Wayfarer</span></h3>
+      
+      
+          <div class="description">
+            <p>
+              A web app to store your favorite wanderlust memories, and find places to make new ones. Although geared towards must-see art pieces, you can share any highlights from your travels.
+            </p>
+            <p>
+              Create an account, describe what you recommend or do not recommend, and view what others had to say at the hottest art destinations across the globe.
+            </p>
+            <p>
+              <span class="body-bold">Collaborated with 3 teammates</span> to build this full stack application in a 1 week sprint.
+            </p>
+          </div>
+      
+          <div class="projects__item__tech">
+            <p>Django</p>
+            <p>PostgreSQL</p>
+            <p>Python</p>
+          </div>
+      
+          <div class="projects__item__demo">
+            <p>
+              Test Account: Demo | DemoAccount
+            </p>
+          </div>
+      
+      
+      
+          <div class="projects__item__links">
+            <a href="https://github.com/Luna5678/ProjectWayfarer" target="_blank">
+              <i class="big github square icon"></i>
+            </a>
+            <a href="https://wayfarer-art-app.herokuapp.com/" target="_blank">
+              <i class="big external square alternate icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
   </div>
 
   <!-- SKILLS -->
   <div id="skills">
-    <div class="section-body">
-      <h2>Skills.</h2>
-      <div class="ui centered images">
-        <img src="./images/skills-css-logo.png" alt="CSS 3 Logo" data-content="CSS3" class="ui image skills-logo" />
-        <img src="./images/skills-html-logo.png" alt="HTML 5 Logo" data-content="HTML5" class="ui image skills-logo" />
-        <img src="./images/skills-js-logo.png" alt="JavaScript Logo" data-content="JavaScript ES6" class="ui image skills-logo" />
-        <img src="./images/skills-mongodb-logo.png" alt="MongoDB Logo" data-content="MongoDB" class="ui image small skills-logo" />
-        <img src="./images/skills-mongoose-logo.png" alt="Mongoose Logo" data-content="Mongoose" class="ui image small skills-logo" />
-        <img src="./images/skills-node-js-logo.png" alt="Node.js Logo" data-content="Node.js" class="ui image skills-logo" />
-        <img src="./images/skills-express-logo.png" alt="Express Logo" data-content="Express.js" class="ui image skills-logo" />
-        <img src="./images/skills-sass-logo.png" alt="Sass Logo" data-content="Sass" class="ui image skills-logo" />
-        <img src="./images/skills-jquery-logo.png" alt="jQuery Logo" data-content="jQuery" class="ui image skills-logo" />
-        <img src="./images/skills-bootstrap-logo.png" alt="Bootstrap Logo" data-content="Bootstrap" class="ui image skills-logo" />
-        <img src="./images/skills-bulma-logo.png" alt="Bulma Logo" data-content="Bulma" class="ui image skills-logo" />
-        <img src="./images/skills-python-logo.png" alt="Python Logo" data-content="Python" class="ui image skills-logo" />
-        <img src="./images/skills-typescript-logo.png" alt="TypeScript Logo" data-content="TypeScript" class="ui image skills-logo" />
-        <img src="./images/skills-postgres-logo.png" alt="PostgreSQL Logo" data-content="PostgreSQL" class="ui image skills-logo" />
-        <img src="./images/skills-django-logo.png" alt="Django Logo" data-content="Django" class="ui image skills-logo" />
-        <img src="./images/skills-semanticui-logo.png" alt="Semantic UI Logo" data-content="Semantic UI" class="ui image skills-logo" />
-      </div>
+    <div class="skills__heading">
+      <img src="images/section-icon-skills.svg" class="svg-icon-large" />
+      <h2>Skills</h2>
+    </div>
+      
+    <div class="ui centered images skills__container">
+      <img src="./images/skills-css-logo.png" alt="CSS 3 Logo" data-content="CSS3" class="ui image skills-logo" />
+      <img src="./images/skills-html-logo.png" alt="HTML 5 Logo" data-content="HTML5" class="ui image skills-logo" />
+      <img src="./images/skills-js-logo.png" alt="JavaScript Logo" data-content="JavaScript ES6" class="ui image skills-logo" />
+      <img src="./images/skills-react-logo.svg" alt="React Logo" data-content="React" class="ui small image skills-logo" />
+      <img src="./images/skills-mongodb-logo.png" alt="MongoDB Logo" data-content="MongoDB" class="ui image small skills-logo" />
+      <img src="./images/skills-mongoose-logo.png" alt="Mongoose Logo" data-content="Mongoose" class="ui image small skills-logo" />
+      <img src="./images/skills-node-js-logo.png" alt="Node.js Logo" data-content="Node.js" class="ui image skills-logo" />
+      <img src="./images/skills-express-logo.png" alt="Express Logo" data-content="Express.js" class="ui image skills-logo" />
+      <img src="./images/skills-sass-logo.png" alt="Sass Logo" data-content="Sass" class="ui image skills-logo" />
+      <img src="./images/skills-jquery-logo.png" alt="jQuery Logo" data-content="jQuery" class="ui image skills-logo" />
+      <img src="./images/skills-bootstrap-logo.png" alt="Bootstrap Logo" data-content="Bootstrap" class="ui image skills-logo" />
+      <img src="./images/skills-bulma-logo.png" alt="Bulma Logo" data-content="Bulma" class="ui image skills-logo" />
+      <img src="./images/skills-python-logo.png" alt="Python Logo" data-content="Python" class="ui image skills-logo" />
+      <img src="./images/skills-typescript-logo.png" alt="TypeScript Logo" data-content="TypeScript" class="ui image skills-logo" />
+      <img src="./images/skills-postgres-logo.png" alt="PostgreSQL Logo" data-content="PostgreSQL" class="ui image skills-logo" />
+      <img src="./images/skills-django-logo.png" alt="Django Logo" data-content="Django" class="ui image skills-logo" />
+      <img src="./images/skills-semanticui-logo.png" alt="Semantic UI Logo" data-content="Semantic UI" class="ui image skills-logo" />
     </div>
   </div>
 
   <!-- CONTACT -->
   <div id="contact">
-    <div class="section-body">
+    <div class="contact__heading">
+      <img src="images/section-icon-contact.svg" class="svg-icon-large" />
       <h2>Contact</h2>
-  
-      <div class="ui stackable two column grid">
-        <div class="row">
-          <!-- CONTACT LEFT SIDE -->
-          <div class="six wide column">
-            <div class="contact-left">
-              <div class="contact-container">
-                <p><span class="body-text-larger">Let's connect!</span></p>
-              </div>
-              
-              <div class="contact-container">
-                <p>
-                  <span class="my-name">
-                    Lonna Lu
-                    <br />
-                    Los Angeles, CA
-                  </span>
-                </p>
-              </div>
-              
-              <p class="contact-link">
-                <a href="./files/LonnaLu-Resume.pdf" download>
-                  <i class="download icon large"></i>
-                  <span class="contact-link-underline"> RESUME </span>
-                </a>
-              </p>
-              <p class="contact-link">
-                <a href="https://www.linkedin.com/in/lonna-lu/" target="_blank">
-                  <i class="linkedin icon large"></i>
-                  <span class="contact-link-underline"> LINKEDIN </span>
-                </a>
-              </p>
-              <p class="contact-link">
-                <a href="https://github.com/Luna5678" target="_blank">
-                  <i class="github icon large"></i>
-                  <span class="contact-link-underline"> GITHUB </span>
-                </a>
-              </p>
-              <p class="contact-link">
-                <a href="mailto:lonna.dev@gmail.com" target="_blank">
-                  <i class="envelope icon large"></i>
-                  <span class="contact-link-underline"> EMAIL </span>
-                </a>
-              </p>
-            </div>
-          </div>
-  
-          <!-- CONTACT RIGHT SIDE -->
+    </div>
 
-          <div class="ten wide column">
-            <form action="https://formspree.io/f/xgerqyky" method="POST">
-              <div class="ui form stackable grid">
-                <div class="two column row">
-                  <div class="three wide column input-label">
-                    <label for="name">
-                      NAME
-                    </label>
-                  </div>
-                  <div class="eleven wide column">
-                    <input type="text" name="name" placeholder="Your Name" id="name" />
-                  </div>
-                </div>
-                <div class="two column row">
-                  <div class="three wide column input-label">
-                    <label for="email">
-                      EMAIL
-                    </label>
-                  </div>
-                  <div class="eleven wide column">
-                    <input type="email" name="email" placeholder="Your Email" id="email" />
-                  </div>
-                </div>
-                <div class="two column row">
-                  <div class="three wide column input-label">
-                    <label for="message">
-                      MESSAGE
-                    </label>
-                  </div>
-                  <div class="eleven wide column">
-                    <textarea rows="5" name="message" placeholder="Your Message" id="message"></textarea>
-                  </div>
-                </div>
-                <div class="centered row">
-                  <button class="ui button input-label" type="submit">
-                    SEND
-                  </button>
-                </div>
-            </form>
-          </div>
-        </div>
+    <div class="contact__info">
+      <div class="contact__info__memoji">
+        <img src="images/memoji.png" />
+      </div>
+
+      <div class="contact__info__content">
+        <h3><span class="heading-bold">Lonna Lu</span></h3>
+        <h3><span class="heading-bold">Los Angeles, CA</span></h3>
+        <p>Fill in the form below, or find me through any of these channels:</p>
       </div>
     </div>
-  </div>
+
+    <div class="contact__links">
+        <a href="./files/LonnaLu-Resume.pdf" download id="contact-links__download">
+            <i class="save outline icon large"></i>
+            Download Resume
+        </a>
+
+        <a href="https://www.linkedin.com/in/lonna-lu/" target="_blank" id="contact-link__linkedin">
+          <i class="linkedin icon large"></i>
+          LinkedIn
+        </a>
+
+        <a href="https://github.com/Luna5678" target="_blank" id="contact-link__github">
+          <i class="github icon large"></i>
+          Github
+        </a>
+
+        <a href="mailto:lonna.dev@gmail.com" target="_blank" id="contact-link__email">
+          <i class="envelope icon large"></i>
+          Email
+        </a>
+    </div>
+      
+    <div id="contact__form">
+      <div class="contact__form__heading">
+        <img src="images/icon-paper-plane.svg" class="svg-icon-small">
+        <h2><span class="heading-bold">Say Hello!</span></h2>
+      </div>
+
+      <div class="contact__form__container">
+        <form action="https://formspree.io/f/xgerqyky" method="POST">
+          <div class="contact__form__fields">
+            <input type="text" name="name" placeholder="Your Name" id="name" />
+
+            <input type="email" name="email" placeholder="Your Email" id="email" />
+
+            <textarea rows="5" name="message" placeholder="Your Message" id="message"></textarea>
+          </div>
+          
+
+          <button type="submit" class="button contact-button">
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
   </div>
 
 </body>
