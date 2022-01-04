@@ -54,7 +54,13 @@
       </h3>
     </div>
     
-    <a class="button contact-button" href="#contact">Contact</a>
+    <!-- <a class="button contact-button" href="#contact">Contact</a> -->
+    <div class="ui animated button" tabindex="0">
+      <div class="visible content">Contact</div>
+      <div class="hidden content">
+        <i class="mail icon"></i>
+      </div>
+    </div>
   </div>
 
   <!-- ABOUT -->
@@ -66,13 +72,13 @@
         <img src="images/section-icon-about-left.svg" class="about__left-quote svg-icon-large" />
         <div class="about__content">
           <p>
-            With over 3 years of project management experience, I’ve grown a deep understanding of users and interpersonal skills even when the pressure rises. Because I wanted to support my team better, I decided to learn about software engineering on my free time. Eventually, the interest became a passion.
+            With over 3 years of project management experience, I've grown a deep understanding of users and interpersonal skills even when the pressure rises. Because I wanted to support my team better, I decided to learn about software engineering on my free time. Eventually, the interest became a passion.
           </p>
           <p>
-            My curiosity and ambition led me to complete <a href="https://generalassemb.ly/why-ga-is-worth-it" target="_blank">General Assembly</a>’s Software Engineering Immersive bootcamp. Since then, I’ve been <a href="https://github.com/Luna5678" target="_blank">building apps</a> and participating in Hackathons using different tech stacks.
+            My curiosity and ambition led me to complete <a href="https://generalassemb.ly/why-ga-is-worth-it" target="_blank">General Assembly</a>'s Software Engineering Immersive bootcamp. Since then, I've been <a href="https://github.com/Luna5678" target="_blank">building apps</a> and participating in Hackathons using different tech stacks.
           </p>
           <p>
-            When I’m not developing applications, you can probably find me enjoying a hiking trail or milk tea!
+            When I'm not developing applications, you can probably find me enjoying a hiking trail or milk tea!
           </p>
 
         </div>
@@ -122,11 +128,28 @@
           </div>
       
           <div class="projects__item__links">
-            <a href="https://github.com/Luna5678/Outlet" target="_blank">
+            <!-- <a href="https://github.com/Luna5678/Outlet" target="_blank">
               <i class="big github square icon"></i>
+            </a> -->
+            <a href="https://github.com/Luna5678/Outlet" target="_blank">
+              <div class="ui vertical animated button" tabindex="0">
+                <div class="hidden content">Github</div>
+                <div class="visible content">
+                  <i class="big github icon"></i>
+                </div>
+              </div>
             </a>
-            <a href="https://outlet.vercel.app/" target="_blank">
+
+            <!-- <a href="https://outlet.vercel.app/" target="_blank">
               <i class="big external square alternate icon"></i>
+            </a> -->
+            <a href="https://outlet.vercel.app/" target="_blank">
+              <div class="ui vertical animated button" tabindex="0">
+                <div class="hidden content">Demo</div>
+                <div class="visible content">
+                  <i class="big desktop icon"></i>
+                </div>
+              </div>
             </a>
           </div>
         </div>
@@ -314,9 +337,16 @@
           </div>
           
 
-          <button type="submit" class="button contact-button">
+          <!-- <button type="submit" class="button contact-button">
             Send
-          </button>
+          </button> -->
+
+          <div class="ui animated button" tabindex="0">
+            <div class="visible content">Send</div>
+            <div class="hidden content">
+              <i class="paper plane icon"></i>
+            </div>
+          </div>
         </form>
       </div>
     </div>
