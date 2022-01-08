@@ -106,6 +106,14 @@ a:hover {
   cursor: pointer;
 }
 
+.button.shadow {
+  box-shadow: 3px 3px 10px #bcb8b1;
+}
+
+.button.shadow:hover {
+  box-shadow: 3px 3px 10px #bcb8b1;
+}
+
 .svg-icon-large {
   width: 50px;
 }
@@ -197,8 +205,9 @@ a:hover {
   width: 200px;
 }
 
-.contact-button {
-  margin-top: 20px;
+#contact-button {
+  padding: 23px;
+  font-size: 1.2rem;
 }
 
 /* ABOUT ME SECTION */
@@ -502,10 +511,6 @@ img.portrait__img {
   max-width: 900px;
 }
 
-.contact__form__container .button {
-  background-color: var(--color-orange) !important;
-}
-
 .contact__form__heading {
   display: flex;
   justify-content: center;
@@ -531,7 +536,6 @@ img.portrait__img {
 
 .contact__form__fields input {
   border: 1px solid var(--color-white);
-  /* border-bottom: var(--color-light-cyan) solid 3px; */
   background-color: #fff;
   color: var(--color-white);
   font-family: var(--body-font);
@@ -542,9 +546,7 @@ img.portrait__img {
 }
 
 .contact__form__fields textarea {
-  /* border: none; */
   border: 1px solid var(--color-white);
-  /* border-radius: 2px; */
   background-color: #fff;
   color: var(--color-white);
   font-family: var(--body-font);
@@ -554,11 +556,18 @@ img.portrait__img {
   margin: 10px 0;
 }
 
-.contact__form__container button {
-  margin: auto;
-  margin-top: 40px;
-  display: block;
+.contact__form__container .button {
+  background-color: var(--color-orange) !important;
 }
+
+#send-button {
+  width: 100px;
+  display: block;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+/* SECTION RESPONSIVE MEDIA QUERIES */
 
 @media only screen and (max-width: 752px) {
   .contact-left {
