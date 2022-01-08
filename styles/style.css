@@ -10,12 +10,13 @@ html {
   --body-font: "Montserrat", sans-serif;
   --aqua-color: #e0fbfc;
   --purple-color: #fbebe3;
-  --color-black: #f4f3ee;
-  --color-white: #38322e;
-  --color-lavender: #325d86;
+  --color-black: #fef6f0;
+  --color-white: #424243;
+  --color-lavender: #0c7f83;
   --color-light-cyan: #e0fbfc;
   --color-light-teal: #82c3c6;
   --color-teal: #0c7f83;
+  --color-orange: #f15f45;
 }
 
 * {
@@ -61,6 +62,13 @@ a:hover {
   text-decoration: underline;
 }
 
+.section-heading {
+  text-transform: lowercase;
+  font-size: 4rem;
+  font-weight: initial;
+  color: var(--color-teal);
+}
+
 .heading-bold {
   font-weight: 700;
 }
@@ -74,7 +82,7 @@ a:hover {
 }
 
 .button {
-  background-color: var(--color-light-teal);
+  background-color: #e8a487 !important;
   border: none;
   color: #ffffff !important;
   padding: 15px 30px;
@@ -108,7 +116,10 @@ a:hover {
 /* NAV */
 
 #nav {
-  background: linear-gradient(rgba(138, 129, 124, 1), rgba(138, 129, 124, 0.6));
+  background: linear-gradient(
+    rgba(244, 212, 198, 1),
+    rgba(244, 212, 198, 0.03)
+  );
   font-family: var(--headings-font);
   height: 100px;
   margin: auto;
@@ -121,6 +132,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   gap: 60px;
+  z-index: 2;
 }
 
 #nav #nav__icon {
@@ -129,9 +141,9 @@ a:hover {
 
 #nav a {
   text-decoration: none;
-  color: var(--color-light-cyan) !important;
+  color: var(--color-white) !important;
   padding: 15px 30px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 #nav a:hover {
@@ -140,9 +152,9 @@ a:hover {
 
 .nav-item {
   font-size: 1.2rem;
-  font-weight: 700;
+  /* font-weight: 700; */
   text-decoration: underline;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   border-radius: 5px;
 }
 
@@ -333,7 +345,7 @@ img.portrait__img {
 /* SKILLS SECTION */
 
 #skills {
-  background-color: var(--color-light-teal);
+  background-color: #fff;
   width: 100%;
   padding: 100px 0;
 }
@@ -347,7 +359,6 @@ img.portrait__img {
 }
 
 .skills__heading h2 {
-  color: var(--color-black);
   padding-left: 10px;
   display: inline;
 }
