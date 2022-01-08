@@ -54,12 +54,14 @@
       </h3>
     </div>
     
-    <div id="contact-button" class="ui animated button shadow" tabindex="0">
-      <div class="visible content">Contact</div>
-      <div class="hidden content">
-        <i class="large mail icon"></i>
+    <a href="#contact">
+      <div id="contact-button" class="ui animated button shadow" tabindex="0">
+        <div class="visible content">Contact</div>
+        <div class="hidden content">
+          <i class="large mail icon"></i>
+        </div>
       </div>
-    </div>
+    </a>
   </div>
 
   <!-- ABOUT -->
@@ -366,12 +368,15 @@
             <textarea rows="5" name="message" placeholder="Message" id="message"></textarea>
           </div>
 
-          <div id="send-button" class="ui animated button shadow" tabindex="0">
-            <div class="visible content">Send</div>
-            <div class="hidden content">
-              <i class="paper plane icon"></i>
+          <button type="submit" id="send-button-tag">
+            <div id="send-button" class="ui animated button shadow" tabindex="0" type="submit">
+              <div class="visible content">Send</div>
+              <div class="hidden content">
+                <i class="paper plane icon"></i>
+              </div>
             </div>
-          </div>
+          </button>
+          
         </form>
       </div>
     </div>
