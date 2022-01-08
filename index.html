@@ -54,25 +54,32 @@
       </h3>
     </div>
     
-    <a class="button contact-button" href="#contact">Contact</a>
+    <a href="#contact">
+      <div id="contact-button" class="ui animated button shadow" tabindex="0">
+        <div class="visible content">Contact</div>
+        <div class="hidden content">
+          <i class="large mail icon"></i>
+        </div>
+      </div>
+    </a>
   </div>
 
   <!-- ABOUT -->
   <div id="about">
-    <h2>About Me</h2>
+    <h2 class="section-heading">About Me</h2>
 
     <div class="about__container">
       <div class="about__container__left">
         <img src="images/section-icon-about-left.svg" class="about__left-quote svg-icon-large" />
         <div class="about__content">
           <p>
-            With over 3 years of project management experience, I’ve grown a deep understanding of users and interpersonal skills even when the pressure rises. Because I wanted to support my team better, I decided to learn about software engineering on my free time. Eventually, the interest became a passion.
+            With over 3 years of project management experience, I've grown a deep understanding of users and interpersonal skills even when the pressure rises. Because I wanted to support my team better, I decided to learn about software engineering on my free time. Eventually, the interest became a passion.
           </p>
           <p>
-            My curiosity and ambition led me to complete <a href="https://generalassemb.ly/why-ga-is-worth-it" target="_blank">General Assembly</a>’s Software Engineering Immersive bootcamp. Since then, I’ve been <a href="https://github.com/Luna5678" target="_blank">building apps</a> and participating in Hackathons using different tech stacks.
+            My curiosity and ambition led me to complete <a href="https://generalassemb.ly/why-ga-is-worth-it" target="_blank">General Assembly</a>'s Software Engineering Immersive bootcamp. Since then, I've been <a href="https://github.com/Luna5678" target="_blank">building apps</a> and participating in Hackathons using different tech stacks.
           </p>
           <p>
-            When I’m not developing applications, you can probably find me enjoying a hiking trail or milk tea!
+            When I'm not developing applications, you can probably find me enjoying a hiking trail or milk tea!
           </p>
 
         </div>
@@ -89,7 +96,7 @@
   <div id="projects">
     <div id="projects__heading">
       <img src="./images/section-icon-projects.svg" class="svg-icon-large" />
-      <h2>Latest Projects</h2>
+      <h2 class="section-heading">Latest Projects</h2>
     </div>
     <!-- </div> -->
 
@@ -101,7 +108,7 @@
           <img src="./images/outlet-1.png" alt="Outlet Project Cover Photo" />
         </div>
         <div class="projects__item__container__content">
-          <h3><span class="heading-bold">Outlet</span></h3>
+          <h3 class="project__titles">Outlet</h3>
       
       
           <div class="description">
@@ -123,10 +130,21 @@
       
           <div class="projects__item__links">
             <a href="https://github.com/Luna5678/Outlet" target="_blank">
-              <i class="big github square icon"></i>
+              <div class="ui vertical animated button" tabindex="0">
+                <div class="hidden content">Github</div>
+                <div class="visible content">
+                  <i class="large github icon"></i>
+                </div>
+              </div>
             </a>
+
             <a href="https://outlet.vercel.app/" target="_blank">
-              <i class="big external square alternate icon"></i>
+              <div class="ui vertical animated button" tabindex="0">
+                <div class="hidden content">Demo</div>
+                <div class="visible content">
+                  <i class="large desktop icon"></i>
+                </div>
+              </div>
             </a>
           </div>
         </div>
@@ -140,12 +158,12 @@
           <img src="./images/cravings-1.png" alt="Cravings Project Cover Photo" />
         </div>
         <div class="projects__item__container__content">
-          <h3><span class="heading-bold">Cravings</span></h3>
+          <h3 class="project__titles">Cravings</h3>
 
 
           <div class="description">
             <p>
-              As an avid Yelp user, I’ve always had trouble finding the latest restaurant menu. Cravings solves that. You can search popular Los Angeles, CA restaurants by cuisine, dietary restrictions, or name. When one interests you, the current menu with current prices are promised so any surprises left are for your taste buds only.
+              As an avid Yelp user, I've always had trouble finding the latest restaurant menu. Cravings solves that. You can search popular Los Angeles, CA restaurants by cuisine, dietary restrictions, or name. When one interests you, the current menu with current prices are promised so any surprises left are for your taste buds only.
             </p>
             <p>
               <span class="body-bold">Fully responsive full stack</span> application. Create your own profile, write reviews, and check out where other food
@@ -169,13 +187,25 @@
 
 
           <div class="projects__item__links">
-              <a href="https://github.com/Luna5678/Cravings/tree/main/" target="_blank">
-                <i class="big github square icon"></i>
-              </a>
-              <a href="https://cravings-ll.herokuapp.com/" target="_blank">
-                <i class="big external square alternate icon"></i>
-              </a>
+            <a href="https://github.com/Luna5678/Cravings/tree/main/" target="_blank">
+              <div class="ui vertical animated button" tabindex="0">
+                <div class="hidden content">Github</div>
+                <div class="visible content">
+                  <i class="large github icon"></i>
+                </div>
+              </div>
+            </a>
+          
+            <a href="http://cravings-ll.herokuapp.com/" target="_blank">
+              <div class="ui vertical animated button" tabindex="0">
+                <div class="hidden content">Demo</div>
+                <div class="visible content">
+                  <i class="large desktop icon"></i>
+                </div>
+              </div>
+            </a>
           </div>
+
         </div>
       </div>
 
@@ -186,7 +216,7 @@
           <img src="./images/wayfarer-1.png" alt="Wayfarer Project Cover Photo" />
         </div>
         <div class="projects__item__container__content">
-          <h3><span class="heading-bold">Wayfarer</span></h3>
+          <h3 class="project__titles">Wayfarer</h3>
       
       
           <div class="description">
@@ -213,16 +243,26 @@
             </p>
           </div>
       
-      
-      
           <div class="projects__item__links">
             <a href="https://github.com/Luna5678/ProjectWayfarer" target="_blank">
-              <i class="big github square icon"></i>
+              <div class="ui vertical animated button" tabindex="0">
+                <div class="hidden content">Github</div>
+                <div class="visible content">
+                  <i class="large github icon"></i>
+                </div>
+              </div>
             </a>
+          
             <a href="https://wayfarer-art-app.herokuapp.com/" target="_blank">
-              <i class="big external square alternate icon"></i>
+              <div class="ui vertical animated button" tabindex="0">
+                <div class="hidden content">Demo</div>
+                <div class="visible content">
+                  <i class="large desktop icon"></i>
+                </div>
+              </div>
             </a>
           </div>
+      
         </div>
       </div>
 
@@ -232,7 +272,7 @@
   <div id="skills">
     <div class="skills__heading">
       <img src="images/section-icon-skills.svg" class="svg-icon-large" />
-      <h2>Skills</h2>
+      <h2 class="section-heading">Skills</h2>
     </div>
       
     <div class="ui centered images skills__container">
@@ -260,7 +300,7 @@
   <div id="contact">
     <div class="contact__heading">
       <img src="images/section-icon-contact.svg" class="svg-icon-large" />
-      <h2>Contact</h2>
+      <h2 class="section-heading">Contact</h2>
     </div>
 
     <div class="contact__info">
@@ -275,48 +315,68 @@
       </div>
     </div>
 
-    <div class="contact__links">
-        <a href="./files/LonnaLu-Resume.pdf" download id="contact-links__download">
-            <i class="save outline icon large"></i>
-            Download Resume
+    <div class="contact__links__container">
+        <a href="./files/LonnaLu-Resume.pdf" download>
+          <div class="ui animated button shadow" id="contact__links__resume-button" tabindex="0">
+            <div class="visible content">Resume</div>
+            <div class="hidden content">
+              <i class="large save icon contact-icon"></i>
+            </div>
+          </div>
         </a>
 
-        <a href="https://www.linkedin.com/in/lonna-lu/" target="_blank" id="contact-link__linkedin">
-          <i class="linkedin icon large"></i>
-          LinkedIn
+        <a href="https://www.linkedin.com/in/lonna-lu/" target="_blank">
+          <div class="ui animated button shadow" id="contact__links__linkedin-button" tabindex="0">
+            <div class="visible content">LinkedIn</div>
+            <div class="hidden content">
+              <i class="large linkedin icon"></i>
+            </div>
+          </div>
         </a>
 
-        <a href="https://github.com/Luna5678" target="_blank" id="contact-link__github">
-          <i class="github icon large"></i>
-          Github
+        <a href="https://github.com/Luna5678" target="_blank">
+          <div class="ui animated button shadow" id="contact__links__github-button" tabindex="0">
+            <div class="visible content">Github</div>
+            <div class="hidden content">
+              <i class="large github icon"></i>
+            </div>
+          </div>
         </a>
 
-        <a href="mailto:lonna.dev@gmail.com" target="_blank" id="contact-link__email">
-          <i class="envelope icon large"></i>
-          Email
+        <a href="mailto:lonna.dev@gmail.com" target="_blank">
+          <div class="ui animated button shadow" id="contact__links__email-button" tabindex="0">
+            <div class="visible content">Email</div>
+            <div class="hidden content">
+              <i class="large envelope icon"></i>
+            </div>
+          </div>
         </a>
     </div>
       
     <div id="contact__form">
       <div class="contact__form__heading">
-        <img src="images/icon-paper-plane.svg" class="svg-icon-small">
-        <h2><span class="heading-bold">Say Hello!</span></h2>
+        <h2 class="section-heading">💬 Say Hello!</h2>
       </div>
 
       <div class="contact__form__container">
         <form action="https://formspree.io/f/xgerqyky" method="POST">
           <div class="contact__form__fields">
-            <input type="text" name="name" placeholder="Your Name" id="name" />
+            <input type="text" name="name" placeholder="Name" id="name" />
 
-            <input type="email" name="email" placeholder="Your Email" id="email" />
+            <input type="email" name="email" placeholder="Email" id="email" />
 
-            <textarea rows="5" name="message" placeholder="Your Message" id="message"></textarea>
+            <textarea rows="5" name="message" placeholder="Message" id="message"></textarea>
           </div>
-          
 
-          <button type="submit" class="button contact-button">
-            Send
+          <button type="submit" id="send-button-tag">
+            <div id="send-button" class="ui animated button shadow" tabindex="0" type="submit">
+              <div class="visible content">Send</div>
+              <div class="hidden content">
+                <i class="paper plane icon"></i>
+              </div>
+            </div>
           </button>
+          
         </form>
       </div>
     </div>
