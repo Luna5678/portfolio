@@ -476,56 +476,6 @@ img.portrait__img {
   background-color: #b23121 !important;
 }
 
-/* 
-.contact__link div {
-  font-size: 1.2rem;
-  padding: 10px;
-} */
-
-/* .contact__links a {
-  padding: 25px;
-} */
-
-/* #contact-links__download {
-  background-color: var(--color-teal);
-  color: #ffffff;
-} */
-
-/* #contact-links__download:hover {
-  background: linear-gradient(
-    to right,
-    var(--color-teal),
-    var(--color-light-teal)
-  );
-} */
-/* 
-#contact-link__linkedin {
-  background-color: #0077b5;
-  color: #ffffff;
-}
-
-#contact-link__linkedin:hover {
-  background: linear-gradient(to right, #0077b5, #00a0dc);
-}
-
-#contact-link__github {
-  background-color: #7dbbe6;
-  color: #211f1f;
-}
-
-#contact-link__github:hover {
-  background: linear-gradient(to right, #7dbbe6, #9cdaf1);
-}
-
-#contact-link__email {
-  background-color: #b23121;
-  color: #eeeeee;
-}
-
-#contact-link__email:hover {
-  background: linear-gradient(to right, #b23121, #d44638);
-} */
-
 #contact__form {
   background-color: #fff;
   margin: 25px auto;
@@ -599,6 +549,25 @@ img.portrait__img {
 
   #contact__form {
     padding: 20px 10px;
+  }
+
+  .about__container__left {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .about__container__left .about__left-quote {
+    justify-self: start;
+    padding-left: 10px;
+  }
+
+  .about__container__left .about__right-quote {
+    justify-self: end;
+    padding-right: 10px;
+  }
+
+  .about__container__left .about__content {
+    padding: 0;
   }
 }
 
