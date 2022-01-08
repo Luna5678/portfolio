@@ -291,7 +291,7 @@ img.portrait__img {
 }
 
 .projects__item__container__background {
-  background-color: rgba(130, 195, 198, 0.5);
+  background-color: #c1dcd8;
   grid-column-start: 3;
   grid-column-end: 15;
   grid-row-start: 1;
@@ -496,11 +496,14 @@ img.portrait__img {
 }
 
 #contact__form {
-  background-color: var(--color-light-teal);
+  background-color: #fff;
   margin: 25px auto;
   padding: 100px 10px;
   max-width: 900px;
-  border-radius: 60px;
+}
+
+.contact__form__container .button {
+  background-color: var(--color-orange) !important;
 }
 
 .contact__form__heading {
@@ -514,7 +517,7 @@ img.portrait__img {
   margin: 0;
   padding: 0;
   padding-left: 10px;
-  color: #ffffff;
+  color: var(--color-orange);
 }
 
 .contact__form__fields {
@@ -527,24 +530,25 @@ img.portrait__img {
 }
 
 .contact__form__fields input {
-  border: none;
-  border-bottom: var(--color-light-cyan) solid 3px;
-  background-color: var(--color-light-teal);
+  border: 1px solid var(--color-white);
+  /* border-bottom: var(--color-light-cyan) solid 3px; */
+  background-color: #fff;
   color: var(--color-white);
   font-family: var(--body-font);
-  padding: 5px;
+  padding: 12px;
   font-size: 1.2rem;
   font-weight: 600;
   margin: 5px 0;
 }
 
 .contact__form__fields textarea {
-  border: var(--color-light-cyan) solid 3px;
-  border-radius: 2px;
-  background-color: var(--color-light-teal);
+  /* border: none; */
+  border: 1px solid var(--color-white);
+  /* border-radius: 2px; */
+  background-color: #fff;
   color: var(--color-white);
   font-family: var(--body-font);
-  padding: 5px;
+  padding: 12px;
   font-size: 1.2rem;
   font-weight: 600;
   margin: 10px 0;
@@ -608,7 +612,7 @@ img.portrait__img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(36, 41, 46, 0.5);
+    background-color: #c1dcd8;
     padding: 50px;
   }
 
