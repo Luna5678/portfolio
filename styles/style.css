@@ -16,7 +16,8 @@ html {
   --color-light-cyan: #e0fbfc;
   --color-light-teal: #82c3c6;
   --color-teal: #0c7f83;
-  --color-orange: #f15f45;
+  --color-light-orange: #e8a487;
+  --color-orange: #db7043;
 }
 
 * {
@@ -54,11 +55,11 @@ body {
 }
 
 a {
-  color: var(--color-light-teal);
+  color: var(--color-orange);
 }
 
 a:hover {
-  color: var(--color-light-cyan);
+  color: var(--color-light-orange);
   text-decoration: underline;
 }
 
@@ -221,12 +222,13 @@ a:hover {
 
 .about__container__left {
   display: grid;
-  grid-template-columns: 38px 1fr 38px;
-  gap: 15px;
+  grid-template-columns: 65px 1fr 65px;
+  gap: 10px;
 }
 
 .about__container__left .about__left-quote {
   align-self: start;
+  justify-self: center;
 }
 
 .about__container__left .about__content {
@@ -241,10 +243,10 @@ a:hover {
 
 .about__container__left .about__right-quote {
   align-self: end;
+  justify-self: center;
 }
 
 img.portrait__img {
-  border-radius: 60px;
   width: 330px;
   align-self: center;
 }
@@ -272,6 +274,10 @@ img.portrait__img {
   color: var(--color-lavender);
   text-align: center;
   margin-top: 0;
+}
+
+.project__titles {
+  font-weight: 700;
 }
 
 .projects__item__container {
