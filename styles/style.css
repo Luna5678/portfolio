@@ -8,13 +8,9 @@ html {
 :root {
   --headings-font: "Raleway", sans-serif;
   --body-font: "Montserrat", sans-serif;
-  --aqua-color: #e0fbfc;
-  --purple-color: #fbebe3;
-  --color-black: #fef6f0;
-  --color-white: #424243;
-  --color-lavender: #0c7f83;
+  --color-tan: #fef6f0;
+  --color-brown: #424243;
   --color-light-cyan: #e0fbfc;
-  --color-light-teal: #82c3c6;
   --color-teal: #0c7f83;
   --color-light-orange: #e8a487;
   --color-orange: #db7043;
@@ -30,7 +26,7 @@ h1,
 h2,
 h3 {
   font-family: var(--headings-font);
-  color: var(--color-white);
+  color: var(--color-brown);
   padding: 5px 0;
 }
 
@@ -45,12 +41,12 @@ h3 {
 
 p {
   font-family: var(--body-font);
-  color: var(--color-white);
+  color: var(--color-brown);
   font-weight: 500;
 }
 
 body {
-  background-color: var(--color-black);
+  background-color: var(--color-tan);
   font-family: var(--body-font);
 }
 
@@ -94,15 +90,6 @@ a:hover {
   text-transform: uppercase;
   font-size: 1.2rem;
   box-shadow: 1px 1px 5px #707070;
-}
-
-.button:hover {
-  background: linear-gradient(
-    to right,
-    var(--color-lavender),
-    var(--color-light-teal)
-  );
-  cursor: pointer;
 }
 
 .button.shadow {
@@ -149,7 +136,7 @@ a:hover {
 
 #nav a {
   text-decoration: none;
-  color: var(--color-white) !important;
+  color: var(--color-brown) !important;
   padding: 15px 25px;
   font-size: 1.2rem;
   border: 1px solid transparent;
@@ -170,8 +157,8 @@ a:hover {
 /* HOME SECTION */
 
 #home {
-  color: var(--color-white);
-  background-color: var(--color-black);
+  color: var(--color-brown);
+  background-color: var(--color-tan);
   padding-top: 150px;
   text-align: center;
 }
@@ -180,17 +167,6 @@ a:hover {
   max-width: 580px;
   padding: 10px;
   margin: 30px auto;
-}
-
-#home h1 {
-  display: inline-block;
-  padding-left: 3px;
-  padding-right: 36px;
-  padding-top: 15px;
-  margin-bottom: 20px;
-  background-color: var(--aqua-color);
-  color: var(--color-black);
-  border-radius: 1px;
 }
 
 .home__memoji {
@@ -212,7 +188,7 @@ a:hover {
 }
 
 #about h2 {
-  color: var(--color-lavender);
+  color: var(--color-teal);
 }
 
 .about__container {
@@ -272,7 +248,7 @@ img.portrait__img {
 }
 
 #projects__heading h2 {
-  color: var(--color-lavender);
+  color: var(--color-teal);
   text-align: center;
   margin-top: 0;
 }
@@ -338,17 +314,6 @@ img.portrait__img {
   margin-bottom: 14px;
 }
 
-.projects__item__links a {
-  text-decoration: none;
-  color: var(--color-light-teal);
-  font-size: 1.1rem;
-}
-
-.projects__item__links a:hover {
-  text-decoration: none;
-  color: var(--color-light-cyan);
-}
-
 /* SKILLS SECTION */
 
 #skills {
@@ -397,7 +362,7 @@ img.portrait__img {
 /* CONTACT SECTION */
 
 #contact {
-  color: var(--color-white);
+  color: var(--color-brown);
   width: 80%;
   max-width: 1200px;
   margin: auto;
@@ -411,7 +376,7 @@ img.portrait__img {
 }
 
 .contact__heading h2 {
-  color: var(--color-lavender);
+  color: var(--color-teal);
 }
 
 .contact__info {
@@ -502,9 +467,9 @@ img.portrait__img {
 }
 
 .contact__form__fields input {
-  border: 1px solid var(--color-white);
+  border: 1px solid var(--color-brown);
   background-color: #fff;
-  color: var(--color-white);
+  color: var(--color-brown);
   font-family: var(--body-font);
   padding: 12px;
   font-size: 1.2rem;
@@ -514,9 +479,9 @@ img.portrait__img {
 }
 
 .contact__form__fields textarea {
-  border: 1px solid var(--color-white);
+  border: 1px solid var(--color-brown);
   background-color: #fff;
-  color: var(--color-white);
+  color: var(--color-brown);
   font-family: var(--body-font);
   padding: 12px;
   font-size: 1.2rem;
@@ -596,7 +561,7 @@ img.portrait__img {
 
 @media only screen and (min-width: 752px) {
   .nav-item {
-    color: var(--purple-color) !important;
+    color: var(--color-tan) !important;
     padding: 0 40px;
   }
 }
@@ -621,7 +586,7 @@ img.portrait__img {
   #nav.responsive {
     flex-direction: column;
     gap: 10px;
-    background-color: rgba(4, 14, 15, 0.5);
+    background-color: var(--color-tan);
     height: auto;
     padding-top: 30px;
   }
