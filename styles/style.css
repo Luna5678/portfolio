@@ -510,6 +510,7 @@ img.portrait__img {
   font-size: 1.2rem;
   font-weight: 600;
   margin: 5px 0;
+  border-radius: 4px;
 }
 
 .contact__form__fields textarea {
@@ -521,6 +522,7 @@ img.portrait__img {
   font-size: 1.2rem;
   font-weight: 600;
   margin: 10px 0;
+  border-radius: 4px;
 }
 
 .contact__form__container .button {
