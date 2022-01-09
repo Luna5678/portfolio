@@ -549,6 +549,10 @@ img.portrait__img {
     padding: 50px 25px;
   }
 
+  .contact__form__heading h2 {
+    text-align: center;
+  }
+
   .contact__form__fields input {
     width: 95%;
     margin: auto;
